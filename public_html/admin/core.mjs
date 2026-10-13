@@ -58,7 +58,7 @@ export function fileName(name, nonce) {
 
 export class GitHubClient {
   #token;
-  constructor(token, transport = fetch) { this.#token = token; this.transport = transport; }
+  constructor(token, transport = globalThis.fetch.bind(globalThis)) { this.#token = token; this.transport = transport; }
   clear() { this.#token = ''; }
   async request(path, method = 'GET', body) {
     if (!this.#token) throw new Error('Conecta tu acceso a GitHub para publicar.');

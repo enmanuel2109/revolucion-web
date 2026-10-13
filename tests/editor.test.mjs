@@ -6,6 +6,18 @@ import { GitHubClient, API, safeURL, utf8Base64, decodeBase64, validateContent, 
 const schema = JSON.parse(await readFile(new URL('../public_html/admin/schema.json',import.meta.url),'utf8'));
 const content = JSON.parse(await readFile(new URL('../content/site.json',import.meta.url),'utf8'));
 
+test('El fetch nativo conserva el contexto del navegador al conectar',async()=>{
+ const original=globalThis.fetch;
+ let calls=0;
+ globalThis.fetch=async function(url,options){
+  assert.equal(this,globalThis,'fetch necesita el contexto global del navegador');
+  assert.equal(url,API);assert.equal(options.headers.Authorization,'Bearer TEST_ONLY');calls++;
+  return new Response(JSON.stringify({full_name:'enmanuel2109/revolucion-web'}),{status:200});
+ };
+ try { const client=new GitHubClient('TEST_ONLY');await client.connect();assert.equal(calls,1); }
+ finally {globalThis.fetch=original;}
+});
+
 test('Conectar acceso utiliza la URL exacta del repositorio, sin barra final',async()=>{
  const client=new GitHubClient('TEST_ONLY',async(url,options)=>{
   assert.equal(url,API);assert.equal(options.headers.Authorization,'Bearer TEST_ONLY');
