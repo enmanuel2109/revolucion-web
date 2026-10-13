@@ -1,0 +1,5288 @@
+{
+  "version": 1,
+  "fields": [
+    {
+      "id": "f0001",
+      "group": "Información general",
+      "label": "SEO: description",
+      "type": "text",
+      "target": {
+        "node": "n0005",
+        "attr": "content"
+      },
+      "initial": "Certifícate como Professional Party Designer con R-evolución. Galedo Party Designers y R-evolución traen la certificación a Estados Unidos. Orlando, FL 2026 – 2027.",
+      "original": "Certifícate como Professional Party Designer con R-evolución. Galedo Party Designers y R-evolución traen la certificación a Estados Unidos. Orlando, FL 2026 – 2027.",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0002",
+      "group": "Información general",
+      "label": "SEO: og:title",
+      "type": "text",
+      "target": {
+        "node": "n0006",
+        "attr": "content"
+      },
+      "initial": "R-evolución Estados Unidos",
+      "original": "R-evolución Estados Unidos",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0003",
+      "group": "Información general",
+      "label": "SEO: og:description",
+      "type": "text",
+      "target": {
+        "node": "n0007",
+        "attr": "content"
+      },
+      "initial": "Certificación Professional Party Designer en Orlando, FL. Inicia el 26 de octubre de 2026.",
+      "original": "Certificación Professional Party Designer en Orlando, FL. Inicia el 26 de octubre de 2026.",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0004",
+      "group": "Información general",
+      "label": "SEO: og:url",
+      "type": "link",
+      "target": {
+        "node": "n0009",
+        "attr": "content"
+      },
+      "initial": "https://www.revoluciongaledousa.com",
+      "original": "https://www.revoluciongaledousa.com",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0005",
+      "group": "Información general",
+      "label": "Título del navegador: R-evolución Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0010",
+        "textIndex": 0
+      },
+      "initial": "R-evolución Estados Unidos",
+      "original": "R-evolución Estados Unidos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0006",
+      "group": "Navegación",
+      "label": "Destino del botón: Estados Unidos",
+      "type": "link",
+      "target": {
+        "node": "n0025",
+        "attr": "href"
+      },
+      "initial": "#inicio",
+      "original": "#inicio",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0007",
+      "group": "Navegación",
+      "label": "Texto: Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0027",
+        "textIndex": 0
+      },
+      "initial": "Estados Unidos",
+      "original": "Estados Unidos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0008",
+      "group": "Navegación",
+      "label": "Destino del botón: Programa",
+      "type": "link",
+      "target": {
+        "node": "n0030",
+        "attr": "href"
+      },
+      "initial": "#programa",
+      "original": "#programa",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0009",
+      "group": "Navegación",
+      "label": "Texto de botón: Programa",
+      "type": "text",
+      "target": {
+        "node": "n0030",
+        "textIndex": 0
+      },
+      "initial": "Programa",
+      "original": "Programa",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0010",
+      "group": "Navegación",
+      "label": "Destino del botón: Experiencia",
+      "type": "link",
+      "target": {
+        "node": "n0032",
+        "attr": "href"
+      },
+      "initial": "#experiencia",
+      "original": "#experiencia",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0011",
+      "group": "Navegación",
+      "label": "Texto de botón: Experiencia",
+      "type": "text",
+      "target": {
+        "node": "n0032",
+        "textIndex": 0
+      },
+      "initial": "Experiencia",
+      "original": "Experiencia",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0012",
+      "group": "Navegación",
+      "label": "Destino del botón: Calendario",
+      "type": "link",
+      "target": {
+        "node": "n0034",
+        "attr": "href"
+      },
+      "initial": "#calendario",
+      "original": "#calendario",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0013",
+      "group": "Navegación",
+      "label": "Texto de botón: Calendario",
+      "type": "text",
+      "target": {
+        "node": "n0034",
+        "textIndex": 0
+      },
+      "initial": "Calendario",
+      "original": "Calendario",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0014",
+      "group": "Navegación",
+      "label": "Destino del botón: Inversión",
+      "type": "link",
+      "target": {
+        "node": "n0036",
+        "attr": "href"
+      },
+      "initial": "#inversion",
+      "original": "#inversion",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0015",
+      "group": "Navegación",
+      "label": "Texto de botón: Inversión",
+      "type": "text",
+      "target": {
+        "node": "n0036",
+        "textIndex": 0
+      },
+      "initial": "Inversión",
+      "original": "Inversión",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0016",
+      "group": "Navegación",
+      "label": "Destino del botón: Cómo reservar",
+      "type": "link",
+      "target": {
+        "node": "n0038",
+        "attr": "href"
+      },
+      "initial": "#reservar",
+      "original": "#reservar",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0017",
+      "group": "Navegación",
+      "label": "Texto de botón: Cómo reservar",
+      "type": "text",
+      "target": {
+        "node": "n0038",
+        "textIndex": 0
+      },
+      "initial": "Cómo reservar",
+      "original": "Cómo reservar",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0018",
+      "group": "Navegación",
+      "label": "Destino del botón: Matricúlate",
+      "type": "link",
+      "target": {
+        "node": "n0039",
+        "attr": "href"
+      },
+      "initial": "#inversion",
+      "original": "#inversion",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0019",
+      "group": "Navegación",
+      "label": "Texto de botón: Matricúlate",
+      "type": "text",
+      "target": {
+        "node": "n0039",
+        "textIndex": 0
+      },
+      "initial": "Matricúlate",
+      "original": "Matricúlate ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0020",
+      "group": "Portada",
+      "label": "Título: Certifícate como",
+      "type": "text",
+      "target": {
+        "node": "n0114",
+        "textIndex": 0
+      },
+      "initial": "Certifícate como",
+      "original": "Certifícate como ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0021",
+      "group": "Portada",
+      "label": "Texto: Professional Party Designer",
+      "type": "text",
+      "target": {
+        "node": "n0115",
+        "textIndex": 0
+      },
+      "initial": "Professional Party Designer",
+      "original": "Professional Party Designer",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0022",
+      "group": "Portada",
+      "label": "Texto: con R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0116",
+        "textIndex": 0
+      },
+      "initial": "con R-evolución",
+      "original": "con R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0023",
+      "group": "Portada",
+      "label": "Texto destacado: Galedo Party Designers",
+      "type": "text",
+      "target": {
+        "node": "n0118",
+        "textIndex": 0
+      },
+      "initial": "Galedo Party Designers",
+      "original": "Galedo Party Designers",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0024",
+      "group": "Portada",
+      "label": "Texto: y",
+      "type": "text",
+      "target": {
+        "node": "n0117",
+        "textIndex": 0
+      },
+      "initial": "y",
+      "original": " y ",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": " "
+    },
+    {
+      "id": "f0025",
+      "group": "Portada",
+      "label": "Texto destacado: R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0119",
+        "textIndex": 0
+      },
+      "initial": "R-evolución",
+      "original": "R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0026",
+      "group": "Portada",
+      "label": "Texto: se unen para traer a Estados Unidos la certificación de",
+      "type": "text",
+      "target": {
+        "node": "n0117",
+        "textIndex": 1
+      },
+      "initial": "se unen para traer a Estados Unidos la certificación de",
+      "original": " se unen para traer a Estados Unidos la certificación de ",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": " "
+    },
+    {
+      "id": "f0027",
+      "group": "Portada",
+      "label": "Texto destacado: Professional Party Designer",
+      "type": "text",
+      "target": {
+        "node": "n0120",
+        "textIndex": 0
+      },
+      "initial": "Professional Party Designer",
+      "original": "Professional Party Designer",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0028",
+      "group": "Portada",
+      "label": "Texto: .",
+      "type": "text",
+      "target": {
+        "node": "n0117",
+        "textIndex": 2
+      },
+      "initial": ".",
+      "original": ".",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0029",
+      "group": "Portada",
+      "label": "Texto: ORLANDO, FL.",
+      "type": "text",
+      "target": {
+        "node": "n0121",
+        "textIndex": 0
+      },
+      "initial": "ORLANDO, FL.",
+      "original": "ORLANDO, FL. ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0030",
+      "group": "Portada",
+      "label": "Texto: 2026 – 2027",
+      "type": "text",
+      "target": {
+        "node": "n0122",
+        "textIndex": 0
+      },
+      "initial": "2026 – 2027",
+      "original": "2026 – 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0031",
+      "group": "Portada",
+      "label": "Texto: 1ra Generación Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0124",
+        "textIndex": 0
+      },
+      "initial": "1ra Generación Estados Unidos",
+      "original": "1ra Generación Estados Unidos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0032",
+      "group": "Portada",
+      "label": "Texto: 7ma Generación R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0125",
+        "textIndex": 0
+      },
+      "initial": "7ma Generación R-evolución",
+      "original": "7ma Generación R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0033",
+      "group": "Portada",
+      "label": "Texto: Días",
+      "type": "text",
+      "target": {
+        "node": "n0130",
+        "textIndex": 0
+      },
+      "initial": "Días",
+      "original": "Días",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0034",
+      "group": "Portada",
+      "label": "Texto: Horas",
+      "type": "text",
+      "target": {
+        "node": "n0133",
+        "textIndex": 0
+      },
+      "initial": "Horas",
+      "original": "Horas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0035",
+      "group": "Portada",
+      "label": "Texto: Minutos",
+      "type": "text",
+      "target": {
+        "node": "n0136",
+        "textIndex": 0
+      },
+      "initial": "Minutos",
+      "original": "Minutos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0036",
+      "group": "Portada",
+      "label": "Texto: Segundos",
+      "type": "text",
+      "target": {
+        "node": "n0139",
+        "textIndex": 0
+      },
+      "initial": "Segundos",
+      "original": "Segundos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0037",
+      "group": "Portada",
+      "label": "Texto: Primera clase:",
+      "type": "text",
+      "target": {
+        "node": "n0140",
+        "textIndex": 0
+      },
+      "initial": "Primera clase:",
+      "original": "Primera clase: ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0038",
+      "group": "Portada",
+      "label": "Texto destacado: 26 de octubre de 2026 · 10:00 a. m.",
+      "type": "text",
+      "target": {
+        "node": "n0141",
+        "textIndex": 0
+      },
+      "initial": "26 de octubre de 2026 · 10:00 a. m.",
+      "original": "26 de octubre de 2026 · 10:00 a. m.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0039",
+      "group": "Portada",
+      "label": "Texto: (hora de Miami)",
+      "type": "text",
+      "target": {
+        "node": "n0140",
+        "textIndex": 1
+      },
+      "initial": "(hora de Miami)",
+      "original": " (hora de Miami)",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0040",
+      "group": "Portada",
+      "label": "Destino del botón: Matricúlate",
+      "type": "link",
+      "target": {
+        "node": "n0143",
+        "attr": "href"
+      },
+      "initial": "#inversion",
+      "original": "#inversion",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0041",
+      "group": "Portada",
+      "label": "Texto de botón: Matricúlate",
+      "type": "text",
+      "target": {
+        "node": "n0143",
+        "textIndex": 0
+      },
+      "initial": "Matricúlate",
+      "original": "Matricúlate ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0042",
+      "group": "Portada",
+      "label": "Destino del botón: Ver el programa",
+      "type": "link",
+      "target": {
+        "node": "n0146",
+        "attr": "href"
+      },
+      "initial": "#programa",
+      "original": "#programa",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0043",
+      "group": "Portada",
+      "label": "Texto de botón: Ver el programa",
+      "type": "text",
+      "target": {
+        "node": "n0146",
+        "textIndex": 0
+      },
+      "initial": "Ver el programa",
+      "original": "Ver el programa",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0044",
+      "group": "Portada",
+      "label": "Imagen: Trofeo Reconocimiento R-evolución 2025: círculo rosa con corazón ",
+      "type": "image",
+      "target": {
+        "node": "n0151",
+        "attr": "src"
+      },
+      "initial": "assets/images/imagen-03.jpg",
+      "original": "assets/images/imagen-03.jpg",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0045",
+      "group": "Portada",
+      "label": "Descripción de la imagen",
+      "type": "text",
+      "target": {
+        "node": "n0151",
+        "attr": "alt"
+      },
+      "initial": "Trofeo Reconocimiento R-evolución 2025: círculo rosa con corazón sobre base blanca",
+      "original": "Trofeo Reconocimiento R-evolución 2025: círculo rosa con corazón sobre base blanca",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0046",
+      "group": "Portada",
+      "label": "Texto: Reconocimiento R-evolución 2025",
+      "type": "text",
+      "target": {
+        "node": "n0152",
+        "textIndex": 0
+      },
+      "initial": "Reconocimiento R-evolución 2025",
+      "original": " Reconocimiento R-evolución 2025",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0047",
+      "group": "Portada",
+      "label": "Texto: Organizador oficial · Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0158",
+        "textIndex": 0
+      },
+      "initial": "Organizador oficial · Estados Unidos",
+      "original": "Organizador oficial · Estados Unidos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0048",
+      "group": "Portada",
+      "label": "Imagen: Galedo Party Designers",
+      "type": "image",
+      "target": {
+        "node": "n0159",
+        "attr": "src"
+      },
+      "initial": "assets/images/imagen-04.png",
+      "original": "assets/images/imagen-04.png",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0049",
+      "group": "Portada",
+      "label": "Descripción de la imagen",
+      "type": "text",
+      "target": {
+        "node": "n0159",
+        "attr": "alt"
+      },
+      "initial": "Galedo Party Designers",
+      "original": "Galedo Party Designers",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0050",
+      "group": "Portada",
+      "label": "Texto: Programa",
+      "type": "text",
+      "target": {
+        "node": "n0161",
+        "textIndex": 0
+      },
+      "initial": "Programa",
+      "original": "Programa",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0051",
+      "group": "Portada",
+      "label": "Texto: Avalado por",
+      "type": "text",
+      "target": {
+        "node": "n0164",
+        "textIndex": 0
+      },
+      "initial": "Avalado por",
+      "original": "Avalado por",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0052",
+      "group": "Portada",
+      "label": "Imagen: Universidad Señor de Sipán (USS)",
+      "type": "image",
+      "target": {
+        "node": "n0165",
+        "attr": "src"
+      },
+      "initial": "assets/images/imagen-05.png",
+      "original": "assets/images/imagen-05.png",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0053",
+      "group": "Portada",
+      "label": "Descripción de la imagen",
+      "type": "text",
+      "target": {
+        "node": "n0165",
+        "attr": "alt"
+      },
+      "initial": "Universidad Señor de Sipán (USS)",
+      "original": "Universidad Señor de Sipán (USS)",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0054",
+      "group": "Cifras del programa",
+      "label": "Cifra: 25",
+      "type": "text",
+      "target": {
+        "node": "n0169",
+        "textIndex": 0
+      },
+      "initial": "25",
+      "original": "25",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0055",
+      "group": "Cifras del programa",
+      "label": "Texto: Masterclasses online en vivo",
+      "type": "text",
+      "target": {
+        "node": "n0170",
+        "textIndex": 0
+      },
+      "initial": "Masterclasses online en vivo",
+      "original": "Masterclasses online en vivo",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0056",
+      "group": "Cifras del programa",
+      "label": "Cifra: 5",
+      "type": "text",
+      "target": {
+        "node": "n0172",
+        "textIndex": 0
+      },
+      "initial": "5",
+      "original": "5",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0057",
+      "group": "Cifras del programa",
+      "label": "Texto: Módulos de enfoque innovador",
+      "type": "text",
+      "target": {
+        "node": "n0173",
+        "textIndex": 0
+      },
+      "initial": "Módulos de enfoque innovador",
+      "original": "Módulos de enfoque innovador",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0058",
+      "group": "Cifras del programa",
+      "label": "Cifra: 2",
+      "type": "text",
+      "target": {
+        "node": "n0175",
+        "textIndex": 0
+      },
+      "initial": "2",
+      "original": "2",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0059",
+      "group": "Cifras del programa",
+      "label": "Texto: Días presenciales en Orlando, FL.",
+      "type": "text",
+      "target": {
+        "node": "n0176",
+        "textIndex": 0
+      },
+      "initial": "Días presenciales en Orlando, FL.",
+      "original": "Días presenciales en Orlando, FL.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0060",
+      "group": "Cifras del programa",
+      "label": "Cifra: 1°",
+      "type": "text",
+      "target": {
+        "node": "n0178",
+        "textIndex": 0
+      },
+      "initial": "1°",
+      "original": "1°",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0061",
+      "group": "Cifras del programa",
+      "label": "Texto: Programa con aval universitario",
+      "type": "text",
+      "target": {
+        "node": "n0179",
+        "textIndex": 0
+      },
+      "initial": "Programa con aval universitario",
+      "original": "Programa con aval universitario",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0062",
+      "group": "Presentación",
+      "label": "Texto: Programa de Certificación Profesional",
+      "type": "text",
+      "target": {
+        "node": "n0183",
+        "textIndex": 0
+      },
+      "initial": "Programa de Certificación Profesional",
+      "original": "Programa de Certificación Profesional",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0063",
+      "group": "Presentación",
+      "label": "Título: Asume el reto",
+      "type": "text",
+      "target": {
+        "node": "n0184",
+        "textIndex": 0
+      },
+      "initial": "Asume el reto",
+      "original": "Asume el reto ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0064",
+      "group": "Presentación",
+      "label": "Texto: graduándote con nosotros",
+      "type": "text",
+      "target": {
+        "node": "n0185",
+        "textIndex": 0
+      },
+      "initial": "graduándote con nosotros",
+      "original": "graduándote con nosotros",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0065",
+      "group": "Presentación",
+      "label": "Texto: R-evolución es un Programa de Certificación Profesional que ha tr",
+      "type": "multiline",
+      "target": {
+        "node": "n0186",
+        "textIndex": 0
+      },
+      "initial": "R-evolución es un Programa de Certificación Profesional que ha transformado a cientos de Decoradores en Hispanoamérica y, por primera vez, llega a Estados Unidos.",
+      "original": "R-evolución es un Programa de Certificación Profesional que ha transformado a cientos de Decoradores en Hispanoamérica y, por primera vez, llega a Estados Unidos.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0066",
+      "group": "Presentación",
+      "label": "Texto: Aval universitario",
+      "type": "text",
+      "target": {
+        "node": "n0188",
+        "textIndex": 0
+      },
+      "initial": "Aval universitario",
+      "original": "Aval universitario",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0067",
+      "group": "Presentación",
+      "label": "Texto: Es el único programa académico con",
+      "type": "text",
+      "target": {
+        "node": "n0189",
+        "textIndex": 0
+      },
+      "initial": "Es el único programa académico con",
+      "original": "Es el único programa académico con ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0068",
+      "group": "Presentación",
+      "label": "Texto: Aval Universitario",
+      "type": "text",
+      "target": {
+        "node": "n0190",
+        "textIndex": 0
+      },
+      "initial": "Aval Universitario",
+      "original": "Aval Universitario",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0069",
+      "group": "Presentación",
+      "label": "Texto: que te certifica como Professional Party Designer.",
+      "type": "text",
+      "target": {
+        "node": "n0189",
+        "textIndex": 1
+      },
+      "initial": "que te certifica como Professional Party Designer.",
+      "original": " que te certifica como Professional Party Designer.",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0070",
+      "group": "Presentación",
+      "label": "Destino del botón: Matricúlate",
+      "type": "link",
+      "target": {
+        "node": "n0191",
+        "attr": "href"
+      },
+      "initial": "#inversion",
+      "original": "#inversion",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0071",
+      "group": "Presentación",
+      "label": "Texto de botón: Matricúlate",
+      "type": "text",
+      "target": {
+        "node": "n0191",
+        "textIndex": 0
+      },
+      "initial": "Matricúlate",
+      "original": "Matricúlate ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0072",
+      "group": "Frase destacada",
+      "label": "Texto: Te formamos con",
+      "type": "text",
+      "target": {
+        "node": "n0196",
+        "textIndex": 0
+      },
+      "initial": "Te formamos con",
+      "original": "Te formamos con ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0073",
+      "group": "Frase destacada",
+      "label": "Texto: 25 Masterclasses online",
+      "type": "text",
+      "target": {
+        "node": "n0197",
+        "textIndex": 0
+      },
+      "initial": "25 Masterclasses online",
+      "original": "25 Masterclasses online",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0074",
+      "group": "Frase destacada",
+      "label": "Texto: con excelentes mentores alrededor del mundo!",
+      "type": "text",
+      "target": {
+        "node": "n0196",
+        "textIndex": 1
+      },
+      "initial": "con excelentes mentores alrededor del mundo!",
+      "original": " con excelentes mentores alrededor del mundo!",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0075",
+      "group": "Frase destacada",
+      "label": "Texto: Un total de",
+      "type": "text",
+      "target": {
+        "node": "n0198",
+        "textIndex": 0
+      },
+      "initial": "Un total de",
+      "original": "Un total de ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0076",
+      "group": "Frase destacada",
+      "label": "Texto destacado: 5 módulos",
+      "type": "text",
+      "target": {
+        "node": "n0199",
+        "textIndex": 0
+      },
+      "initial": "5 módulos",
+      "original": "5 módulos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0077",
+      "group": "Frase destacada",
+      "label": "Texto: con enfoque completamente innovador que harán que empiece tu",
+      "type": "text",
+      "target": {
+        "node": "n0198",
+        "textIndex": 1
+      },
+      "initial": "con enfoque completamente innovador que harán que empiece tu",
+      "original": " con enfoque completamente innovador que harán que empiece tu ",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": " "
+    },
+    {
+      "id": "f0078",
+      "group": "Frase destacada",
+      "label": "Texto destacado: transformación desde la primera clase!",
+      "type": "text",
+      "target": {
+        "node": "n0200",
+        "textIndex": 0
+      },
+      "initial": "transformación desde la primera clase!",
+      "original": "transformación desde la primera clase!",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0079",
+      "group": "Programa",
+      "label": "Texto: Plan de estudios",
+      "type": "text",
+      "target": {
+        "node": "n0205",
+        "textIndex": 0
+      },
+      "initial": "Plan de estudios",
+      "original": "Plan de estudios",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0080",
+      "group": "Programa",
+      "label": "Título: ¿Qué",
+      "type": "text",
+      "target": {
+        "node": "n0206",
+        "textIndex": 0
+      },
+      "initial": "¿Qué",
+      "original": "¿Qué ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0081",
+      "group": "Programa",
+      "label": "Texto: aprenderás?",
+      "type": "text",
+      "target": {
+        "node": "n0207",
+        "textIndex": 0
+      },
+      "initial": "aprenderás?",
+      "original": "aprenderás?",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0082",
+      "group": "Programa",
+      "label": "Texto: Cinco módulos que van de la mentalidad empresarial al cierre de v",
+      "type": "multiline",
+      "target": {
+        "node": "n0208",
+        "textIndex": 0
+      },
+      "initial": "Cinco módulos que van de la mentalidad empresarial al cierre de ventas, pasando por diseño, arte con globos y rentabilidad.",
+      "original": "Cinco módulos que van de la mentalidad empresarial al cierre de ventas, pasando por diseño, arte con globos y rentabilidad.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0083",
+      "group": "Programa",
+      "label": "Texto: Módulo 1",
+      "type": "text",
+      "target": {
+        "node": "n0212",
+        "textIndex": 0
+      },
+      "initial": "Módulo 1",
+      "original": "Módulo 1",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0084",
+      "group": "Programa",
+      "label": "Título: Mentalidad Empresarial y Posicionamiento de Marca",
+      "type": "text",
+      "target": {
+        "node": "n0213",
+        "textIndex": 0
+      },
+      "initial": "Mentalidad Empresarial y Posicionamiento de Marca",
+      "original": "Mentalidad Empresarial y Posicionamiento de Marca",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0085",
+      "group": "Programa",
+      "label": "Texto: Mentalidad. Emprender desde adentro.",
+      "type": "text",
+      "target": {
+        "node": "n0215",
+        "textIndex": 0
+      },
+      "initial": "Mentalidad. Emprender desde adentro.",
+      "original": "Mentalidad. Emprender desde adentro.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0086",
+      "group": "Programa",
+      "label": "Texto: Liderazgo para Emprendedores Creativos",
+      "type": "text",
+      "target": {
+        "node": "n0216",
+        "textIndex": 0
+      },
+      "initial": "Liderazgo para Emprendedores Creativos",
+      "original": "Liderazgo para Emprendedores Creativos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0087",
+      "group": "Programa",
+      "label": "Texto: Marca Personal y Posicionamiento Premium",
+      "type": "text",
+      "target": {
+        "node": "n0217",
+        "textIndex": 0
+      },
+      "initial": "Marca Personal y Posicionamiento Premium",
+      "original": "Marca Personal y Posicionamiento Premium",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0088",
+      "group": "Programa",
+      "label": "Texto: Psicología del Consumidor y Cliente Ideal",
+      "type": "text",
+      "target": {
+        "node": "n0218",
+        "textIndex": 0
+      },
+      "initial": "Psicología del Consumidor y Cliente Ideal",
+      "original": "Psicología del Consumidor y Cliente Ideal",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0089",
+      "group": "Programa",
+      "label": "Texto: Objetivos SMART y Plan de Crecimiento",
+      "type": "text",
+      "target": {
+        "node": "n0219",
+        "textIndex": 0
+      },
+      "initial": "Objetivos SMART y Plan de Crecimiento",
+      "original": "Objetivos SMART y Plan de Crecimiento",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0090",
+      "group": "Programa",
+      "label": "Texto: Módulo 2",
+      "type": "text",
+      "target": {
+        "node": "n0222",
+        "textIndex": 0
+      },
+      "initial": "Módulo 2",
+      "original": "Módulo 2",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0091",
+      "group": "Programa",
+      "label": "Título: Diseño de Eventos y Experiencia Visual",
+      "type": "text",
+      "target": {
+        "node": "n0223",
+        "textIndex": 0
+      },
+      "initial": "Diseño de Eventos y Experiencia Visual",
+      "original": "Diseño de Eventos y Experiencia Visual",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0092",
+      "group": "Programa",
+      "label": "Texto: Inteligencia Artificial para Decoradores",
+      "type": "text",
+      "target": {
+        "node": "n0225",
+        "textIndex": 0
+      },
+      "initial": "Inteligencia Artificial para Decoradores",
+      "original": "Inteligencia Artificial para Decoradores",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0093",
+      "group": "Programa",
+      "label": "Texto: Renderizados y Diseño 2D/3D",
+      "type": "text",
+      "target": {
+        "node": "n0226",
+        "textIndex": 0
+      },
+      "initial": "Renderizados y Diseño 2D/3D",
+      "original": "Renderizados y Diseño 2D/3D",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0094",
+      "group": "Programa",
+      "label": "Texto: Bocetos Digitales Profesionales",
+      "type": "text",
+      "target": {
+        "node": "n0227",
+        "textIndex": 0
+      },
+      "initial": "Bocetos Digitales Profesionales",
+      "original": "Bocetos Digitales Profesionales",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0095",
+      "group": "Programa",
+      "label": "Texto: Teoría del Color aplicada a Eventos",
+      "type": "text",
+      "target": {
+        "node": "n0228",
+        "textIndex": 0
+      },
+      "initial": "Teoría del Color aplicada a Eventos",
+      "original": "Teoría del Color aplicada a Eventos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0096",
+      "group": "Programa",
+      "label": "Texto: Styling y Composición de mesa",
+      "type": "text",
+      "target": {
+        "node": "n0229",
+        "textIndex": 0
+      },
+      "initial": "Styling y Composición de mesa",
+      "original": "Styling y Composición de mesa",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0097",
+      "group": "Programa",
+      "label": "Texto: Módulo 3",
+      "type": "text",
+      "target": {
+        "node": "n0232",
+        "textIndex": 0
+      },
+      "initial": "Módulo 3",
+      "original": "Módulo 3",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0098",
+      "group": "Programa",
+      "label": "Título: Arte con Globos e Instalaciones Modernas",
+      "type": "text",
+      "target": {
+        "node": "n0233",
+        "textIndex": 0
+      },
+      "initial": "Arte con Globos e Instalaciones Modernas",
+      "original": "Arte con Globos e Instalaciones Modernas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0099",
+      "group": "Programa",
+      "label": "Texto: Principios del arte con Globos",
+      "type": "text",
+      "target": {
+        "node": "n0235",
+        "textIndex": 0
+      },
+      "initial": "Principios del arte con Globos",
+      "original": "Principios del arte con Globos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0100",
+      "group": "Programa",
+      "label": "Texto: Diseño y Construcción de Instalaciones Modernas",
+      "type": "text",
+      "target": {
+        "node": "n0236",
+        "textIndex": 0
+      },
+      "initial": "Diseño y Construcción de Instalaciones Modernas",
+      "original": "Diseño y Construcción de Instalaciones Modernas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0101",
+      "group": "Programa",
+      "label": "Texto: Guirnaldas Orgánicas y Técnicas AQB",
+      "type": "text",
+      "target": {
+        "node": "n0237",
+        "textIndex": 0
+      },
+      "initial": "Guirnaldas Orgánicas y Técnicas AQB",
+      "original": "Guirnaldas Orgánicas y Técnicas AQB",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0102",
+      "group": "Programa",
+      "label": "Texto: Arte Floral y Diseño Orgánico",
+      "type": "text",
+      "target": {
+        "node": "n0238",
+        "textIndex": 0
+      },
+      "initial": "Arte Floral y Diseño Orgánico",
+      "original": "Arte Floral y Diseño Orgánico",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0103",
+      "group": "Programa",
+      "label": "Texto: Tendencias 2026-2028 en Eventos y Decoración",
+      "type": "text",
+      "target": {
+        "node": "n0239",
+        "textIndex": 0
+      },
+      "initial": "Tendencias 2026-2028 en Eventos y Decoración",
+      "original": "Tendencias 2026-2028 en Eventos y Decoración",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0104",
+      "group": "Programa",
+      "label": "Texto: Módulo 4",
+      "type": "text",
+      "target": {
+        "node": "n0242",
+        "textIndex": 0
+      },
+      "initial": "Módulo 4",
+      "original": "Módulo 4",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0105",
+      "group": "Programa",
+      "label": "Título: Rentabilidad, Logística y Sistemas Empresariales",
+      "type": "text",
+      "target": {
+        "node": "n0243",
+        "textIndex": 0
+      },
+      "initial": "Rentabilidad, Logística y Sistemas Empresariales",
+      "original": "Rentabilidad, Logística y Sistemas Empresariales",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0106",
+      "group": "Programa",
+      "label": "Texto: Costos, Gastos y Cálculo Profesional de Precios",
+      "type": "text",
+      "target": {
+        "node": "n0245",
+        "textIndex": 0
+      },
+      "initial": "Costos, Gastos y Cálculo Profesional de Precios",
+      "original": "Costos, Gastos y Cálculo Profesional de Precios",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0107",
+      "group": "Programa",
+      "label": "Texto: Fórmula de Rentabilidad para Decoradores",
+      "type": "text",
+      "target": {
+        "node": "n0246",
+        "textIndex": 0
+      },
+      "initial": "Fórmula de Rentabilidad para Decoradores",
+      "original": "Fórmula de Rentabilidad para Decoradores",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0108",
+      "group": "Programa",
+      "label": "Texto: Contratos, Seguros y Protección Legal para Decoradores",
+      "type": "text",
+      "target": {
+        "node": "n0247",
+        "textIndex": 0
+      },
+      "initial": "Contratos, Seguros y Protección Legal para Decoradores",
+      "original": "Contratos, Seguros y Protección Legal para Decoradores",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0109",
+      "group": "Programa",
+      "label": "Texto: Logística Eficiente para Decoradores",
+      "type": "text",
+      "target": {
+        "node": "n0248",
+        "textIndex": 0
+      },
+      "initial": "Logística Eficiente para Decoradores",
+      "original": "Logística Eficiente para Decoradores",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0110",
+      "group": "Programa",
+      "label": "Texto: Sistemas y Automatización para Decoradores",
+      "type": "text",
+      "target": {
+        "node": "n0249",
+        "textIndex": 0
+      },
+      "initial": "Sistemas y Automatización para Decoradores",
+      "original": "Sistemas y Automatización para Decoradores",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0111",
+      "group": "Programa",
+      "label": "Texto: Módulo 5",
+      "type": "text",
+      "target": {
+        "node": "n0252",
+        "textIndex": 0
+      },
+      "initial": "Módulo 5",
+      "original": "Módulo 5",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0112",
+      "group": "Programa",
+      "label": "Título: Marketing, Ventas y Experiencia del Cliente",
+      "type": "text",
+      "target": {
+        "node": "n0253",
+        "textIndex": 0
+      },
+      "initial": "Marketing, Ventas y Experiencia del Cliente",
+      "original": "Marketing, Ventas y Experiencia del Cliente",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0113",
+      "group": "Programa",
+      "label": "Texto: Neuromarketing para PPD",
+      "type": "text",
+      "target": {
+        "node": "n0255",
+        "textIndex": 0
+      },
+      "initial": "Neuromarketing para PPD",
+      "original": "Neuromarketing para PPD",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0114",
+      "group": "Programa",
+      "label": "Texto: Grow Marketing para Negocios Creativos",
+      "type": "text",
+      "target": {
+        "node": "n0256",
+        "textIndex": 0
+      },
+      "initial": "Grow Marketing para Negocios Creativos",
+      "original": "Grow Marketing para Negocios Creativos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0115",
+      "group": "Programa",
+      "label": "Texto: Tus clientes: Vínculo efectivo y afectivo",
+      "type": "text",
+      "target": {
+        "node": "n0257",
+        "textIndex": 0
+      },
+      "initial": "Tus clientes: Vínculo efectivo y afectivo",
+      "original": "Tus clientes: Vínculo efectivo y afectivo",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0116",
+      "group": "Programa",
+      "label": "Texto: Marketing Digital para PPD",
+      "type": "text",
+      "target": {
+        "node": "n0258",
+        "textIndex": 0
+      },
+      "initial": "Marketing Digital para PPD",
+      "original": "Marketing Digital para PPD",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0117",
+      "group": "Programa",
+      "label": "Texto: Cierre efectivo de Ventas",
+      "type": "text",
+      "target": {
+        "node": "n0259",
+        "textIndex": 0
+      },
+      "initial": "Cierre efectivo de Ventas",
+      "original": "Cierre efectivo de Ventas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0118",
+      "group": "Programa",
+      "label": "Título: Tu transformación",
+      "type": "text",
+      "target": {
+        "node": "n0261",
+        "textIndex": 0
+      },
+      "initial": "Tu transformación",
+      "original": "Tu transformación ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0119",
+      "group": "Programa",
+      "label": "Texto: empieza en la primera clase",
+      "type": "text",
+      "target": {
+        "node": "n0262",
+        "textIndex": 0
+      },
+      "initial": "empieza en la primera clase",
+      "original": "empieza en la primera clase",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0120",
+      "group": "Programa",
+      "label": "Texto: 25 masterclasses · 5 módulos · certificación con aval universitar",
+      "type": "text",
+      "target": {
+        "node": "n0263",
+        "textIndex": 0
+      },
+      "initial": "25 masterclasses · 5 módulos · certificación con aval universitario.",
+      "original": "25 masterclasses · 5 módulos · certificación con aval universitario.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0121",
+      "group": "Programa",
+      "label": "Destino del botón: Matricúlate",
+      "type": "link",
+      "target": {
+        "node": "n0264",
+        "attr": "href"
+      },
+      "initial": "#inversion",
+      "original": "#inversion",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0122",
+      "group": "Programa",
+      "label": "Texto de botón: Matricúlate",
+      "type": "text",
+      "target": {
+        "node": "n0264",
+        "textIndex": 0
+      },
+      "initial": "Matricúlate",
+      "original": "Matricúlate ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0123",
+      "group": "Experiencia",
+      "label": "Texto: Experiencia presencial",
+      "type": "text",
+      "target": {
+        "node": "n0270",
+        "textIndex": 0
+      },
+      "initial": "Experiencia presencial",
+      "original": "Experiencia presencial",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0124",
+      "group": "Experiencia",
+      "label": "Título: Además, participarás en un",
+      "type": "text",
+      "target": {
+        "node": "n0271",
+        "textIndex": 0
+      },
+      "initial": "Además, participarás en un",
+      "original": "Además, participarás en un ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0125",
+      "group": "Experiencia",
+      "label": "Texto: día de montaje único",
+      "type": "text",
+      "target": {
+        "node": "n0272",
+        "textIndex": 0
+      },
+      "initial": "día de montaje único",
+      "original": "día de montaje único",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0126",
+      "group": "Experiencia",
+      "label": "Título: en Orlando, FL.",
+      "type": "text",
+      "target": {
+        "node": "n0271",
+        "textIndex": 1
+      },
+      "initial": "en Orlando, FL.",
+      "original": " en Orlando, FL.",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0127",
+      "group": "Experiencia",
+      "label": "Texto: Taller de Montaje con Corazón de Melon. Si no puedes asistir, pod",
+      "type": "text",
+      "target": {
+        "node": "n0273",
+        "textIndex": 0
+      },
+      "initial": "Taller de Montaje con Corazón de Melon. Si no puedes asistir, podrás verlo también online.",
+      "original": "Taller de Montaje con Corazón de Melon. Si no puedes asistir, podrás verlo también online.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0128",
+      "group": "Experiencia",
+      "label": "Texto: Con Pamela y Jorge de",
+      "type": "text",
+      "target": {
+        "node": "n0275",
+        "textIndex": 0
+      },
+      "initial": "Con Pamela y Jorge de",
+      "original": "Con Pamela y Jorge de",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0129",
+      "group": "Experiencia",
+      "label": "Texto: Corazon de Melon Fiestas",
+      "type": "text",
+      "target": {
+        "node": "n0276",
+        "textIndex": 0
+      },
+      "initial": "Corazon de Melon Fiestas",
+      "original": "Corazon de Melon Fiestas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0130",
+      "group": "Experiencia",
+      "label": "Texto: Uno de los máximos referentes de la industria de eventos",
+      "type": "text",
+      "target": {
+        "node": "n0278",
+        "textIndex": 0
+      },
+      "initial": "Uno de los máximos referentes de la industria de eventos",
+      "original": "Uno de los máximos referentes de la industria de eventos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0131",
+      "group": "Experiencia",
+      "label": "Texto: Directamente desde Perú a Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0281",
+        "textIndex": 0
+      },
+      "initial": "Directamente desde Perú a Estados Unidos",
+      "original": "Directamente desde Perú a Estados Unidos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0132",
+      "group": "Experiencia",
+      "label": "Texto: Si no puedes asistir, podrás verlo también online.",
+      "type": "text",
+      "target": {
+        "node": "n0284",
+        "textIndex": 0
+      },
+      "initial": "Si no puedes asistir, podrás verlo también online.",
+      "original": "Si no puedes asistir, podrás verlo también online.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0133",
+      "group": "Invitados",
+      "label": "Texto: Invitado especial",
+      "type": "text",
+      "target": {
+        "node": "n0289",
+        "textIndex": 0
+      },
+      "initial": "Invitado especial",
+      "original": "Invitado especial",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0134",
+      "group": "Invitados",
+      "label": "Título: Conoce el trabajo de",
+      "type": "text",
+      "target": {
+        "node": "n0290",
+        "textIndex": 0
+      },
+      "initial": "Conoce el trabajo de",
+      "original": "Conoce el trabajo de ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0135",
+      "group": "Invitados",
+      "label": "Texto: Corazón de Melon Fiestas",
+      "type": "text",
+      "target": {
+        "node": "n0291",
+        "textIndex": 0
+      },
+      "initial": "Corazón de Melon Fiestas",
+      "original": "Corazón de Melon Fiestas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0136",
+      "group": "Invitados",
+      "label": "Texto: Pamela y Jorge, uno de los máximos referentes de la industria de ",
+      "type": "multiline",
+      "target": {
+        "node": "n0292",
+        "textIndex": 0
+      },
+      "initial": "Pamela y Jorge, uno de los máximos referentes de la industria de eventos, llegan directamente desde Perú a Estados Unidos para el Taller de Montaje del 9 de febrero de 2027 en Orlando, FL.",
+      "original": "Pamela y Jorge, uno de los máximos referentes de la industria de eventos, llegan directamente desde Perú a Estados Unidos para el Taller de Montaje del 9 de febrero de 2027 en Orlando, FL.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0137",
+      "group": "Invitados",
+      "label": "Destino del botón: Ver su trabajo en Instagram",
+      "type": "link",
+      "target": {
+        "node": "n0293",
+        "attr": "href"
+      },
+      "initial": "https://www.instagram.com/corazondemelonfiestas",
+      "original": "https://www.instagram.com/corazondemelonfiestas",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0138",
+      "group": "Invitados",
+      "label": "Texto de botón: Ver su trabajo en Instagram",
+      "type": "text",
+      "target": {
+        "node": "n0293",
+        "textIndex": 0
+      },
+      "initial": "Ver su trabajo en Instagram",
+      "original": " Ver su trabajo en Instagram",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0139",
+      "group": "Invitados",
+      "label": "Imagen: Corazón de Melon Fiestas, invitada especial de R-evolución Orland",
+      "type": "image",
+      "target": {
+        "node": "n0299",
+        "attr": "src"
+      },
+      "initial": "assets/images/imagen-06.jpg",
+      "original": "assets/images/imagen-06.jpg",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0140",
+      "group": "Invitados",
+      "label": "Descripción de la imagen",
+      "type": "text",
+      "target": {
+        "node": "n0299",
+        "attr": "alt"
+      },
+      "initial": "Corazón de Melon Fiestas, invitada especial de R-evolución Orlando, entre sus arreglos florales",
+      "original": "Corazón de Melon Fiestas, invitada especial de R-evolución Orlando, entre sus arreglos florales",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0141",
+      "group": "Historia y fundadores",
+      "label": "Título: Forma parte de los profesionales que hacen",
+      "type": "text",
+      "target": {
+        "node": "n0302",
+        "textIndex": 0
+      },
+      "initial": "Forma parte de los profesionales que hacen",
+      "original": "Forma parte de los profesionales que hacen ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0142",
+      "group": "Historia y fundadores",
+      "label": "Cifra: HISTORIA",
+      "type": "text",
+      "target": {
+        "node": "n0303",
+        "textIndex": 0
+      },
+      "initial": "HISTORIA",
+      "original": "HISTORIA",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0143",
+      "group": "Historia y fundadores",
+      "label": "Título: en Hispanoamérica y ahora en Estados Unidos!",
+      "type": "text",
+      "target": {
+        "node": "n0302",
+        "textIndex": 1
+      },
+      "initial": "en Hispanoamérica y ahora en Estados Unidos!",
+      "original": " en Hispanoamérica y ahora en Estados Unidos!",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0144",
+      "group": "Historia y fundadores",
+      "label": "Imagen: Jorge y Pamela de Corazón de Melon Fiestas, fundadores de R-evolu",
+      "type": "image",
+      "target": {
+        "node": "n0306",
+        "attr": "src"
+      },
+      "initial": "assets/images/imagen-07.jpg",
+      "original": "assets/images/imagen-07.jpg",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0145",
+      "group": "Historia y fundadores",
+      "label": "Descripción de la imagen",
+      "type": "text",
+      "target": {
+        "node": "n0306",
+        "attr": "alt"
+      },
+      "initial": "Jorge y Pamela de Corazón de Melon Fiestas, fundadores de R-evolución, con el pastel de Professional Party Designer",
+      "original": "Jorge y Pamela de Corazón de Melon Fiestas, fundadores de R-evolución, con el pastel de Professional Party Designer",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0146",
+      "group": "Historia y fundadores",
+      "label": "Texto: Nuestros Fundadores",
+      "type": "text",
+      "target": {
+        "node": "n0308",
+        "textIndex": 0
+      },
+      "initial": "Nuestros Fundadores",
+      "original": "Nuestros Fundadores",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0147",
+      "group": "Historia y fundadores",
+      "label": "Texto: Ya abrieron el camino",
+      "type": "text",
+      "target": {
+        "node": "n0309",
+        "textIndex": 0
+      },
+      "initial": "Ya abrieron el camino",
+      "original": "Ya abrieron el camino",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0148",
+      "group": "Historia y fundadores",
+      "label": "Texto: Jorge y Pamela de Corazón de Melon Fiestas son los fundadores de ",
+      "type": "text",
+      "target": {
+        "node": "n0310",
+        "textIndex": 0
+      },
+      "initial": "Jorge y Pamela de Corazón de Melon Fiestas son los fundadores de R-evolución.",
+      "original": "Jorge y Pamela de Corazón de Melon Fiestas son los fundadores de R-evolución.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0149",
+      "group": "Historia y fundadores",
+      "label": "Destino del botón: Revolución Event",
+      "type": "link",
+      "target": {
+        "node": "n0311",
+        "attr": "href"
+      },
+      "initial": "https://www.instagram.com/revolucionevent",
+      "original": "https://www.instagram.com/revolucionevent",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0150",
+      "group": "Historia y fundadores",
+      "label": "Texto de botón: Revolución Event",
+      "type": "text",
+      "target": {
+        "node": "n0311",
+        "textIndex": 0
+      },
+      "initial": "Revolución Event",
+      "original": "Revolución Event ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0151",
+      "group": "Organizador",
+      "label": "Imagen: Gloriza Donoso, fundadora de Galedo y Embajadora R-evolución Esta",
+      "type": "image",
+      "target": {
+        "node": "n0317",
+        "attr": "src"
+      },
+      "initial": "assets/images/imagen-08.jpg",
+      "original": "assets/images/imagen-08.jpg",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0152",
+      "group": "Organizador",
+      "label": "Descripción de la imagen",
+      "type": "text",
+      "target": {
+        "node": "n0317",
+        "attr": "alt"
+      },
+      "initial": "Gloriza Donoso, fundadora de Galedo y Embajadora R-evolución Estados Unidos",
+      "original": "Gloriza Donoso, fundadora de Galedo y Embajadora R-evolución Estados Unidos",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0153",
+      "group": "Organizador",
+      "label": "Texto: Organizador en Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0319",
+        "textIndex": 0
+      },
+      "initial": "Organizador en Estados Unidos",
+      "original": "Organizador en Estados Unidos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0154",
+      "group": "Organizador",
+      "label": "Título: Galedo es el organizador oficial de",
+      "type": "text",
+      "target": {
+        "node": "n0320",
+        "textIndex": 0
+      },
+      "initial": "Galedo es el organizador oficial de",
+      "original": "Galedo es el organizador oficial de ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0155",
+      "group": "Organizador",
+      "label": "Texto: R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0321",
+        "textIndex": 0
+      },
+      "initial": "R-evolución",
+      "original": "R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0156",
+      "group": "Organizador",
+      "label": "Título: en Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0320",
+        "textIndex": 1
+      },
+      "initial": "en Estados Unidos",
+      "original": " en Estados Unidos",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0157",
+      "group": "Organizador",
+      "label": "Texto destacado: Galedo",
+      "type": "text",
+      "target": {
+        "node": "n0323",
+        "textIndex": 0
+      },
+      "initial": "Galedo",
+      "original": "Galedo",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0158",
+      "group": "Organizador",
+      "label": "Texto: es una empresa de eventos ubicada en",
+      "type": "text",
+      "target": {
+        "node": "n0322",
+        "textIndex": 0
+      },
+      "initial": "es una empresa de eventos ubicada en",
+      "original": " es una empresa de eventos ubicada en ",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": " "
+    },
+    {
+      "id": "f0159",
+      "group": "Organizador",
+      "label": "Texto destacado: Kissimmee, Florida",
+      "type": "text",
+      "target": {
+        "node": "n0324",
+        "textIndex": 0
+      },
+      "initial": "Kissimmee, Florida",
+      "original": "Kissimmee, Florida",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0160",
+      "group": "Organizador",
+      "label": "Texto: , con más de siete años de trayectoria creando celebraciones memo",
+      "type": "text",
+      "target": {
+        "node": "n0322",
+        "textIndex": 1
+      },
+      "initial": ", con más de siete años de trayectoria creando celebraciones memorables en Central Florida.",
+      "original": ", con más de siete años de trayectoria creando celebraciones memorables en Central Florida.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0161",
+      "group": "Organizador",
+      "label": "Texto: Su fundadora,",
+      "type": "text",
+      "target": {
+        "node": "n0325",
+        "textIndex": 0
+      },
+      "initial": "Su fundadora,",
+      "original": "Su fundadora, ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0162",
+      "group": "Organizador",
+      "label": "Texto destacado: Gloriza Donoso",
+      "type": "text",
+      "target": {
+        "node": "n0326",
+        "textIndex": 0
+      },
+      "initial": "Gloriza Donoso",
+      "original": "Gloriza Donoso",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0163",
+      "group": "Organizador",
+      "label": "Texto: , es venezolana, Event Planner y Professional Party Designer cert",
+      "type": "multiline",
+      "target": {
+        "node": "n0325",
+        "textIndex": 1
+      },
+      "initial": ", es venezolana, Event Planner y Professional Party Designer certificada, mentora en Estados Unidos y",
+      "original": ", es venezolana, Event Planner y Professional Party Designer certificada, mentora en Estados Unidos y ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0164",
+      "group": "Organizador",
+      "label": "Texto destacado: Embajadora de R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0327",
+        "textIndex": 0
+      },
+      "initial": "Embajadora de R-evolución",
+      "original": "Embajadora de R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0165",
+      "group": "Organizador",
+      "label": "Texto: .",
+      "type": "text",
+      "target": {
+        "node": "n0325",
+        "textIndex": 2
+      },
+      "initial": ".",
+      "original": ".",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0166",
+      "group": "Organizador",
+      "label": "Texto: Eventos infantiles",
+      "type": "text",
+      "target": {
+        "node": "n0329",
+        "textIndex": 0
+      },
+      "initial": "Eventos infantiles",
+      "original": "Eventos infantiles",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0167",
+      "group": "Organizador",
+      "label": "Texto: Eventos corporativos",
+      "type": "text",
+      "target": {
+        "node": "n0330",
+        "textIndex": 0
+      },
+      "initial": "Eventos corporativos",
+      "original": "Eventos corporativos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0168",
+      "group": "Organizador",
+      "label": "Texto: Quinceañeras",
+      "type": "text",
+      "target": {
+        "node": "n0331",
+        "textIndex": 0
+      },
+      "initial": "Quinceañeras",
+      "original": "Quinceañeras",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0169",
+      "group": "Organizador",
+      "label": "Texto: Baby showers",
+      "type": "text",
+      "target": {
+        "node": "n0332",
+        "textIndex": 0
+      },
+      "initial": "Baby showers",
+      "original": "Baby showers",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0170",
+      "group": "Organizador",
+      "label": "Texto: Y mucho más",
+      "type": "text",
+      "target": {
+        "node": "n0333",
+        "textIndex": 0
+      },
+      "initial": "Y mucho más",
+      "original": "Y mucho más",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0171",
+      "group": "Organizador",
+      "label": "Cifra: +7",
+      "type": "text",
+      "target": {
+        "node": "n0336",
+        "textIndex": 0
+      },
+      "initial": "+7",
+      "original": "+7",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0172",
+      "group": "Organizador",
+      "label": "Texto: años de trayectoria",
+      "type": "text",
+      "target": {
+        "node": "n0335",
+        "textIndex": 0
+      },
+      "initial": "años de trayectoria",
+      "original": "años de trayectoria",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0173",
+      "group": "Organizador",
+      "label": "Cifra: Kissimmee, FL",
+      "type": "text",
+      "target": {
+        "node": "n0338",
+        "textIndex": 0
+      },
+      "initial": "Kissimmee, FL",
+      "original": "Kissimmee, FL",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0174",
+      "group": "Organizador",
+      "label": "Texto: Central Florida",
+      "type": "text",
+      "target": {
+        "node": "n0337",
+        "textIndex": 0
+      },
+      "initial": "Central Florida",
+      "original": "Central Florida",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0175",
+      "group": "Organizador",
+      "label": "Destino del botón: Conoce Galedo",
+      "type": "link",
+      "target": {
+        "node": "n0339",
+        "attr": "href"
+      },
+      "initial": "https://www.instagram.com/galedollc/",
+      "original": "https://www.instagram.com/galedollc/",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0176",
+      "group": "Organizador",
+      "label": "Texto de botón: Conoce Galedo",
+      "type": "text",
+      "target": {
+        "node": "n0339",
+        "textIndex": 0
+      },
+      "initial": "Conoce Galedo",
+      "original": "Conoce Galedo ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0177",
+      "group": "Testimonios",
+      "label": "Texto: Testimonios",
+      "type": "text",
+      "target": {
+        "node": "n0345",
+        "textIndex": 0
+      },
+      "initial": "Testimonios",
+      "original": "Testimonios",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0178",
+      "group": "Testimonios",
+      "label": "Título: Escucha a quienes ya viven",
+      "type": "text",
+      "target": {
+        "node": "n0346",
+        "textIndex": 0
+      },
+      "initial": "Escucha a quienes ya viven",
+      "original": "Escucha a quienes ya viven ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0179",
+      "group": "Testimonios",
+      "label": "Texto: R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0347",
+        "textIndex": 0
+      },
+      "initial": "R-evolución",
+      "original": "R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0180",
+      "group": "Testimonios",
+      "label": "Texto: Participantes de R-evolución cuentan cómo ha sido su experiencia.",
+      "type": "text",
+      "target": {
+        "node": "n0348",
+        "textIndex": 0
+      },
+      "initial": "Participantes de R-evolución cuentan cómo ha sido su experiencia.",
+      "original": "Participantes de R-evolución cuentan cómo ha sido su experiencia.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0181",
+      "group": "Testimonios",
+      "label": "Vídeo de testimonio",
+      "type": "video",
+      "target": {
+        "node": "n0351",
+        "attr": "src"
+      },
+      "initial": "videos/testimonio-1.mp4",
+      "original": "videos/testimonio-1.mp4",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0182",
+      "group": "Testimonios",
+      "label": "Portada del vídeo",
+      "type": "image",
+      "target": {
+        "node": "n0351",
+        "attr": "poster"
+      },
+      "initial": "videos/poster-1.jpg",
+      "original": "videos/poster-1.jpg",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0183",
+      "group": "Testimonios",
+      "label": "Texto: Testimonio",
+      "type": "text",
+      "target": {
+        "node": "n0353",
+        "textIndex": 0
+      },
+      "initial": "Testimonio",
+      "original": "Testimonio",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0184",
+      "group": "Testimonios",
+      "label": "Texto: Participante R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0352",
+        "textIndex": 0
+      },
+      "initial": "Participante R-evolución",
+      "original": "Participante R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0185",
+      "group": "Testimonios",
+      "label": "Vídeo de testimonio",
+      "type": "video",
+      "target": {
+        "node": "n0355",
+        "attr": "src"
+      },
+      "initial": "videos/testimonio-2.mp4",
+      "original": "videos/testimonio-2.mp4",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0186",
+      "group": "Testimonios",
+      "label": "Portada del vídeo",
+      "type": "image",
+      "target": {
+        "node": "n0355",
+        "attr": "poster"
+      },
+      "initial": "videos/poster-2.jpg",
+      "original": "videos/poster-2.jpg",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0187",
+      "group": "Testimonios",
+      "label": "Texto: Testimonio",
+      "type": "text",
+      "target": {
+        "node": "n0357",
+        "textIndex": 0
+      },
+      "initial": "Testimonio",
+      "original": "Testimonio",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0188",
+      "group": "Testimonios",
+      "label": "Texto: Participante R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0356",
+        "textIndex": 0
+      },
+      "initial": "Participante R-evolución",
+      "original": "Participante R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0189",
+      "group": "Testimonios",
+      "label": "Vídeo de testimonio",
+      "type": "video",
+      "target": {
+        "node": "n0359",
+        "attr": "src"
+      },
+      "initial": "videos/testimonio-3.mp4",
+      "original": "videos/testimonio-3.mp4",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0190",
+      "group": "Testimonios",
+      "label": "Portada del vídeo",
+      "type": "image",
+      "target": {
+        "node": "n0359",
+        "attr": "poster"
+      },
+      "initial": "videos/poster-3.jpg",
+      "original": "videos/poster-3.jpg",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0191",
+      "group": "Testimonios",
+      "label": "Texto: Testimonio",
+      "type": "text",
+      "target": {
+        "node": "n0361",
+        "textIndex": 0
+      },
+      "initial": "Testimonio",
+      "original": "Testimonio",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0192",
+      "group": "Testimonios",
+      "label": "Texto: Participantes R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0360",
+        "textIndex": 0
+      },
+      "initial": "Participantes R-evolución",
+      "original": "Participantes R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0193",
+      "group": "Calendario",
+      "label": "Texto: Calendario",
+      "type": "text",
+      "target": {
+        "node": "n0365",
+        "textIndex": 0
+      },
+      "initial": "Calendario",
+      "original": "Calendario",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0194",
+      "group": "Calendario",
+      "label": "Título: ¿Cuándo inician",
+      "type": "text",
+      "target": {
+        "node": "n0366",
+        "textIndex": 0
+      },
+      "initial": "¿Cuándo inician",
+      "original": "¿Cuándo inician ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0195",
+      "group": "Calendario",
+      "label": "Texto: las clases?",
+      "type": "text",
+      "target": {
+        "node": "n0367",
+        "textIndex": 0
+      },
+      "initial": "las clases?",
+      "original": "las clases?",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0196",
+      "group": "Calendario",
+      "label": "Texto: Clases totalmente online por Zoom, y dos días presenciales en Orl",
+      "type": "multiline",
+      "target": {
+        "node": "n0368",
+        "textIndex": 0
+      },
+      "initial": "Clases totalmente online por Zoom, y dos días presenciales en Orlando, FL. para el montaje y la graduación.",
+      "original": "Clases totalmente online por Zoom, y dos días presenciales en Orlando, FL. para el montaje y la graduación.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0197",
+      "group": "Calendario",
+      "label": "Texto: Días",
+      "type": "text",
+      "target": {
+        "node": "n0373",
+        "textIndex": 0
+      },
+      "initial": "Días",
+      "original": "Días",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0198",
+      "group": "Calendario",
+      "label": "Texto: Horas",
+      "type": "text",
+      "target": {
+        "node": "n0376",
+        "textIndex": 0
+      },
+      "initial": "Horas",
+      "original": "Horas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0199",
+      "group": "Calendario",
+      "label": "Texto: Minutos",
+      "type": "text",
+      "target": {
+        "node": "n0379",
+        "textIndex": 0
+      },
+      "initial": "Minutos",
+      "original": "Minutos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0200",
+      "group": "Calendario",
+      "label": "Texto: Segundos",
+      "type": "text",
+      "target": {
+        "node": "n0382",
+        "textIndex": 0
+      },
+      "initial": "Segundos",
+      "original": "Segundos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0201",
+      "group": "Calendario",
+      "label": "Texto: Primera clase:",
+      "type": "text",
+      "target": {
+        "node": "n0383",
+        "textIndex": 0
+      },
+      "initial": "Primera clase:",
+      "original": "Primera clase: ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0202",
+      "group": "Calendario",
+      "label": "Texto destacado: 26 de octubre de 2026 · 10:00 a. m.",
+      "type": "text",
+      "target": {
+        "node": "n0384",
+        "textIndex": 0
+      },
+      "initial": "26 de octubre de 2026 · 10:00 a. m.",
+      "original": "26 de octubre de 2026 · 10:00 a. m.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0203",
+      "group": "Calendario",
+      "label": "Texto: (hora de Miami)",
+      "type": "text",
+      "target": {
+        "node": "n0383",
+        "textIndex": 1
+      },
+      "initial": "(hora de Miami)",
+      "original": " (hora de Miami)",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0204",
+      "group": "Calendario",
+      "label": "Texto: Clases online por Zoom",
+      "type": "text",
+      "target": {
+        "node": "n0388",
+        "textIndex": 0
+      },
+      "initial": "Clases online por Zoom",
+      "original": "Clases online por Zoom",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0205",
+      "group": "Calendario",
+      "label": "Texto: 26 de octubre 2026 hasta el 02 de febrero 2027",
+      "type": "text",
+      "target": {
+        "node": "n0387",
+        "textIndex": 0
+      },
+      "initial": "26 de octubre 2026 hasta el 02 de febrero 2027",
+      "original": "26 de octubre 2026 hasta el 02 de febrero 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0206",
+      "group": "Calendario",
+      "label": "Cifra: Días",
+      "type": "text",
+      "target": {
+        "node": "n0391",
+        "textIndex": 0
+      },
+      "initial": "Días",
+      "original": "Días",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0207",
+      "group": "Calendario",
+      "label": "Texto: Lunes, martes y/o miércoles",
+      "type": "text",
+      "target": {
+        "node": "n0390",
+        "textIndex": 0
+      },
+      "initial": "Lunes, martes y/o miércoles",
+      "original": "Lunes, martes y/o miércoles",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0208",
+      "group": "Calendario",
+      "label": "Cifra: Horario",
+      "type": "text",
+      "target": {
+        "node": "n0393",
+        "textIndex": 0
+      },
+      "initial": "Horario",
+      "original": "Horario",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0209",
+      "group": "Calendario",
+      "label": "Texto: 19:00 – 20:00 h, duración de 2 horas aproximadamente. Algunas pod",
+      "type": "multiline",
+      "target": {
+        "node": "n0392",
+        "textIndex": 0
+      },
+      "initial": "19:00 – 20:00 h, duración de 2 horas aproximadamente. Algunas podrán tener otro horario dependiendo del mentor.",
+      "original": "19:00 – 20:00 h, duración de 2 horas aproximadamente. Algunas podrán tener otro horario dependiendo del mentor.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0210",
+      "group": "Calendario",
+      "label": "Cifra: Pausa por Holidays",
+      "type": "text",
+      "target": {
+        "node": "n0395",
+        "textIndex": 0
+      },
+      "initial": "Pausa por Holidays",
+      "original": "Pausa por Holidays",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0211",
+      "group": "Calendario",
+      "label": "Texto: Desde el 15 de diciembre hasta la 1ra semana de enero.",
+      "type": "text",
+      "target": {
+        "node": "n0394",
+        "textIndex": 0
+      },
+      "initial": "Desde el 15 de diciembre hasta la 1ra semana de enero.",
+      "original": "Desde el 15 de diciembre hasta la 1ra semana de enero.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0212",
+      "group": "Calendario",
+      "label": "Cifra: Grabaciones",
+      "type": "text",
+      "target": {
+        "node": "n0397",
+        "textIndex": 0
+      },
+      "initial": "Grabaciones",
+      "original": "Grabaciones",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0213",
+      "group": "Calendario",
+      "label": "Texto: Quedarán grabadas hasta el 5 de febrero 2027.",
+      "type": "text",
+      "target": {
+        "node": "n0396",
+        "textIndex": 0
+      },
+      "initial": "Quedarán grabadas hasta el 5 de febrero 2027.",
+      "original": "Quedarán grabadas hasta el 5 de febrero 2027.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0214",
+      "group": "Calendario",
+      "label": "Texto: Pre-Setup Experience",
+      "type": "text",
+      "target": {
+        "node": "n0400",
+        "textIndex": 0
+      },
+      "initial": "Pre-Setup Experience",
+      "original": "Pre-Setup Experience",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0215",
+      "group": "Calendario",
+      "label": "Texto: VIP",
+      "type": "text",
+      "target": {
+        "node": "n0401",
+        "textIndex": 0
+      },
+      "initial": "VIP",
+      "original": "VIP",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0216",
+      "group": "Calendario",
+      "label": "Texto: 8 de febrero 2027",
+      "type": "text",
+      "target": {
+        "node": "n0399",
+        "textIndex": 0
+      },
+      "initial": "8 de febrero 2027",
+      "original": "8 de febrero 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0217",
+      "group": "Calendario",
+      "label": "Texto: Acceso exclusivo el día antes del montaje para Matrícula VIP.",
+      "type": "text",
+      "target": {
+        "node": "n0402",
+        "textIndex": 0
+      },
+      "initial": "Acceso exclusivo el día antes del montaje para Matrícula VIP.",
+      "original": "Acceso exclusivo el día antes del montaje para Matrícula VIP.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0218",
+      "group": "Calendario",
+      "label": "Texto: Full day · Presencial",
+      "type": "text",
+      "target": {
+        "node": "n0405",
+        "textIndex": 0
+      },
+      "initial": "Full day · Presencial",
+      "original": "Full day · Presencial",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0219",
+      "group": "Calendario",
+      "label": "Texto: 9 de febrero 2027 · Taller de Montaje",
+      "type": "text",
+      "target": {
+        "node": "n0404",
+        "textIndex": 0
+      },
+      "initial": "9 de febrero 2027 · Taller de Montaje",
+      "original": "9 de febrero 2027 · Taller de Montaje",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0220",
+      "group": "Calendario",
+      "label": "Texto: Día de montaje único con",
+      "type": "text",
+      "target": {
+        "node": "n0406",
+        "textIndex": 0
+      },
+      "initial": "Día de montaje único con",
+      "original": "Día de montaje único con ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0221",
+      "group": "Calendario",
+      "label": "Texto destacado: Corazón de Melon",
+      "type": "text",
+      "target": {
+        "node": "n0407",
+        "textIndex": 0
+      },
+      "initial": "Corazón de Melon",
+      "original": "Corazón de Melon",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0222",
+      "group": "Calendario",
+      "label": "Texto: en Orlando, FL.",
+      "type": "text",
+      "target": {
+        "node": "n0406",
+        "textIndex": 1
+      },
+      "initial": "en Orlando, FL.",
+      "original": " en Orlando, FL.",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0223",
+      "group": "Calendario",
+      "label": "Texto: Presencial",
+      "type": "text",
+      "target": {
+        "node": "n0410",
+        "textIndex": 0
+      },
+      "initial": "Presencial",
+      "original": "Presencial",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0224",
+      "group": "Calendario",
+      "label": "Texto: 10 de febrero 2027 · Graduación",
+      "type": "text",
+      "target": {
+        "node": "n0409",
+        "textIndex": 0
+      },
+      "initial": "10 de febrero 2027 · Graduación",
+      "original": "10 de febrero 2027 · Graduación",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0225",
+      "group": "Calendario",
+      "label": "Texto: Si no puedes venir a Orlando, FL. los dos días presenciales, esta",
+      "type": "multiline",
+      "target": {
+        "node": "n0411",
+        "textIndex": 0
+      },
+      "initial": "Si no puedes venir a Orlando, FL. los dos días presenciales, estarás presente con nosotros vía online y recibirás tu certificado por email.",
+      "original": "Si no puedes venir a Orlando, FL. los dos días presenciales, estarás presente con nosotros vía online y recibirás tu certificado por email.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0226",
+      "group": "Precios",
+      "label": "Texto: Matrícula",
+      "type": "text",
+      "target": {
+        "node": "n0415",
+        "textIndex": 0
+      },
+      "initial": "Matrícula",
+      "original": "Matrícula",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0227",
+      "group": "Precios",
+      "label": "Título: Elige tu",
+      "type": "text",
+      "target": {
+        "node": "n0416",
+        "textIndex": 0
+      },
+      "initial": "Elige tu",
+      "original": "Elige tu ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0228",
+      "group": "Precios",
+      "label": "Texto: forma de vivir",
+      "type": "text",
+      "target": {
+        "node": "n0417",
+        "textIndex": 0
+      },
+      "initial": "forma de vivir",
+      "original": "forma de vivir",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0229",
+      "group": "Precios",
+      "label": "Título: R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0416",
+        "textIndex": 1
+      },
+      "initial": "R-evolución",
+      "original": " R-evolución",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0230",
+      "group": "Precios",
+      "label": "Texto: Reserva con solo $100 y paga el balance por cuotas.",
+      "type": "text",
+      "target": {
+        "node": "n0418",
+        "textIndex": 0
+      },
+      "initial": "Reserva con solo $100 y paga el balance por cuotas.",
+      "original": "Reserva con solo $100 y paga el balance por cuotas.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0231",
+      "group": "Precios",
+      "label": "Texto: Matrícula",
+      "type": "text",
+      "target": {
+        "node": "n0422",
+        "textIndex": 0
+      },
+      "initial": "Matrícula",
+      "original": "Matrícula",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0232",
+      "group": "Precios",
+      "label": "Texto: 100% Online",
+      "type": "text",
+      "target": {
+        "node": "n0421",
+        "textIndex": 0
+      },
+      "initial": "100% Online",
+      "original": "100% Online",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0233",
+      "group": "Precios",
+      "label": "Texto: $",
+      "type": "text",
+      "target": {
+        "node": "n0424",
+        "textIndex": 0
+      },
+      "initial": "$",
+      "original": "$",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0234",
+      "group": "Precios",
+      "label": "Texto: 397",
+      "type": "text",
+      "target": {
+        "node": "n0423",
+        "textIndex": 0
+      },
+      "initial": "397",
+      "original": "397",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0235",
+      "group": "Precios",
+      "label": "Texto: USD",
+      "type": "text",
+      "target": {
+        "node": "n0425",
+        "textIndex": 0
+      },
+      "initial": "USD",
+      "original": "USD",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0236",
+      "group": "Precios",
+      "label": "Texto: Reserva con",
+      "type": "text",
+      "target": {
+        "node": "n0426",
+        "textIndex": 0
+      },
+      "initial": "Reserva con",
+      "original": "Reserva con ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0237",
+      "group": "Precios",
+      "label": "Texto destacado: $100",
+      "type": "text",
+      "target": {
+        "node": "n0427",
+        "textIndex": 0
+      },
+      "initial": "$100",
+      "original": "$100",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0238",
+      "group": "Precios",
+      "label": "Texto: , paga por cuotas antes del",
+      "type": "text",
+      "target": {
+        "node": "n0426",
+        "textIndex": 1
+      },
+      "initial": ", paga por cuotas antes del",
+      "original": ", paga por cuotas antes del ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0239",
+      "group": "Precios",
+      "label": "Texto destacado: 26 oct 2026",
+      "type": "text",
+      "target": {
+        "node": "n0428",
+        "textIndex": 0
+      },
+      "initial": "26 oct 2026",
+      "original": "26 oct 2026",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0240",
+      "group": "Precios",
+      "label": "Texto: 25 Masterclasses online en vivo",
+      "type": "text",
+      "target": {
+        "node": "n0430",
+        "textIndex": 0
+      },
+      "initial": "25 Masterclasses online en vivo",
+      "original": "25 Masterclasses online en vivo",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0241",
+      "group": "Precios",
+      "label": "Texto: Mentores internacionales invitados",
+      "type": "text",
+      "target": {
+        "node": "n0433",
+        "textIndex": 0
+      },
+      "initial": "Mentores internacionales invitados",
+      "original": "Mentores internacionales invitados",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0242",
+      "group": "Precios",
+      "label": "Texto: Horarios mayormente nocturnos (pueden variar según disponibilidad",
+      "type": "text",
+      "target": {
+        "node": "n0436",
+        "textIndex": 0
+      },
+      "initial": "Horarios mayormente nocturnos (pueden variar según disponibilidad de cada mentor)",
+      "original": "Horarios mayormente nocturnos (pueden variar según disponibilidad de cada mentor)",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0243",
+      "group": "Precios",
+      "label": "Texto: Acceso a las grabaciones de todas las clases",
+      "type": "text",
+      "target": {
+        "node": "n0439",
+        "textIndex": 0
+      },
+      "initial": "Acceso a las grabaciones de todas las clases",
+      "original": "Acceso a las grabaciones de todas las clases",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0244",
+      "group": "Precios",
+      "label": "Texto: Acceso desde cualquier parte del mundo por Zoom",
+      "type": "text",
+      "target": {
+        "node": "n0442",
+        "textIndex": 0
+      },
+      "initial": "Acceso desde cualquier parte del mundo por Zoom",
+      "original": "Acceso desde cualquier parte del mundo por Zoom",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0245",
+      "group": "Precios",
+      "label": "Texto: Acceso online al montaje final en Orlando, FL. el 9 Feb 2027",
+      "type": "text",
+      "target": {
+        "node": "n0445",
+        "textIndex": 0
+      },
+      "initial": "Acceso online al montaje final en Orlando, FL. el 9 Feb 2027",
+      "original": "Acceso online al montaje final en Orlando, FL. el 9 Feb 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0246",
+      "group": "Precios",
+      "label": "Texto: Acceso online al Acto de Graduación el 10 Feb 2027",
+      "type": "text",
+      "target": {
+        "node": "n0448",
+        "textIndex": 0
+      },
+      "initial": "Acceso online al Acto de Graduación el 10 Feb 2027",
+      "original": "Acceso online al Acto de Graduación el 10 Feb 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0247",
+      "group": "Precios",
+      "label": "Texto: Comunidad privada de estudiantes y networking de R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0451",
+        "textIndex": 0
+      },
+      "initial": "Comunidad privada de estudiantes y networking de R-evolución",
+      "original": "Comunidad privada de estudiantes y networking de R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0248",
+      "group": "Precios",
+      "label": "Destino del botón: Reserva aquí",
+      "type": "link",
+      "target": {
+        "node": "n0454",
+        "attr": "href"
+      },
+      "initial": "https://square.link/u/oXW8UZyh",
+      "original": "https://square.link/u/oXW8UZyh",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0249",
+      "group": "Precios",
+      "label": "Texto de botón: Reserva aquí",
+      "type": "text",
+      "target": {
+        "node": "n0454",
+        "textIndex": 0
+      },
+      "initial": "Reserva aquí",
+      "original": "Reserva aquí ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0250",
+      "group": "Precios",
+      "label": "Texto: Matrícula",
+      "type": "text",
+      "target": {
+        "node": "n0459",
+        "textIndex": 0
+      },
+      "initial": "Matrícula",
+      "original": "Matrícula",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0251",
+      "group": "Precios",
+      "label": "Texto: Regular",
+      "type": "text",
+      "target": {
+        "node": "n0458",
+        "textIndex": 0
+      },
+      "initial": "Regular",
+      "original": "Regular",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0252",
+      "group": "Precios",
+      "label": "Texto: $",
+      "type": "text",
+      "target": {
+        "node": "n0461",
+        "textIndex": 0
+      },
+      "initial": "$",
+      "original": "$",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0253",
+      "group": "Precios",
+      "label": "Texto: 697",
+      "type": "text",
+      "target": {
+        "node": "n0460",
+        "textIndex": 0
+      },
+      "initial": "697",
+      "original": "697",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0254",
+      "group": "Precios",
+      "label": "Texto: USD",
+      "type": "text",
+      "target": {
+        "node": "n0462",
+        "textIndex": 0
+      },
+      "initial": "USD",
+      "original": "USD",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0255",
+      "group": "Precios",
+      "label": "Texto: Reserva con",
+      "type": "text",
+      "target": {
+        "node": "n0463",
+        "textIndex": 0
+      },
+      "initial": "Reserva con",
+      "original": "Reserva con ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0256",
+      "group": "Precios",
+      "label": "Texto destacado: $100",
+      "type": "text",
+      "target": {
+        "node": "n0464",
+        "textIndex": 0
+      },
+      "initial": "$100",
+      "original": "$100",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0257",
+      "group": "Precios",
+      "label": "Texto: , paga por cuotas antes del",
+      "type": "text",
+      "target": {
+        "node": "n0463",
+        "textIndex": 1
+      },
+      "initial": ", paga por cuotas antes del",
+      "original": ", paga por cuotas antes del ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0258",
+      "group": "Precios",
+      "label": "Texto destacado: 15 nov 2026",
+      "type": "text",
+      "target": {
+        "node": "n0465",
+        "textIndex": 0
+      },
+      "initial": "15 nov 2026",
+      "original": "15 nov 2026",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0259",
+      "group": "Precios",
+      "label": "Texto: 25 Masterclasses online en vivo",
+      "type": "text",
+      "target": {
+        "node": "n0467",
+        "textIndex": 0
+      },
+      "initial": "25 Masterclasses online en vivo",
+      "original": "25 Masterclasses online en vivo",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0260",
+      "group": "Precios",
+      "label": "Texto: Mentores internacionales invitados",
+      "type": "text",
+      "target": {
+        "node": "n0470",
+        "textIndex": 0
+      },
+      "initial": "Mentores internacionales invitados",
+      "original": "Mentores internacionales invitados",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0261",
+      "group": "Precios",
+      "label": "Texto: Horarios mayormente nocturnos (pueden variar según disponibilidad",
+      "type": "text",
+      "target": {
+        "node": "n0473",
+        "textIndex": 0
+      },
+      "initial": "Horarios mayormente nocturnos (pueden variar según disponibilidad de cada mentor)",
+      "original": "Horarios mayormente nocturnos (pueden variar según disponibilidad de cada mentor)",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0262",
+      "group": "Precios",
+      "label": "Texto: Acceso a las grabaciones de todas las clases hasta el 5 Feb 2027",
+      "type": "text",
+      "target": {
+        "node": "n0476",
+        "textIndex": 0
+      },
+      "initial": "Acceso a las grabaciones de todas las clases hasta el 5 Feb 2027",
+      "original": "Acceso a las grabaciones de todas las clases hasta el 5 Feb 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0263",
+      "group": "Precios",
+      "label": "Texto: Acceso desde cualquier parte del mundo por Zoom",
+      "type": "text",
+      "target": {
+        "node": "n0479",
+        "textIndex": 0
+      },
+      "initial": "Acceso desde cualquier parte del mundo por Zoom",
+      "original": "Acceso desde cualquier parte del mundo por Zoom",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0264",
+      "group": "Precios",
+      "label": "Texto: Evento presencial final en Orlando, Florida el 9 Feb 2027",
+      "type": "text",
+      "target": {
+        "node": "n0482",
+        "textIndex": 0
+      },
+      "initial": "Evento presencial final en Orlando, Florida el 9 Feb 2027",
+      "original": "Evento presencial final en Orlando, Florida el 9 Feb 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0265",
+      "group": "Precios",
+      "label": "Texto: Certificación Oficial Professional Party Designer presencial el 1",
+      "type": "text",
+      "target": {
+        "node": "n0485",
+        "textIndex": 0
+      },
+      "initial": "Certificación Oficial Professional Party Designer presencial el 10 Feb 2027",
+      "original": "Certificación Oficial Professional Party Designer presencial el 10 Feb 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0266",
+      "group": "Precios",
+      "label": "Destino del botón: Reserva aquí",
+      "type": "link",
+      "target": {
+        "node": "n0488",
+        "attr": "href"
+      },
+      "initial": "https://square.link/u/WeFR3bWh",
+      "original": "https://square.link/u/WeFR3bWh",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0267",
+      "group": "Precios",
+      "label": "Texto de botón: Reserva aquí",
+      "type": "text",
+      "target": {
+        "node": "n0488",
+        "textIndex": 0
+      },
+      "initial": "Reserva aquí",
+      "original": "Reserva aquí ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0268",
+      "group": "Precios",
+      "label": "Texto: Cupos limitados",
+      "type": "text",
+      "target": {
+        "node": "n0492",
+        "textIndex": 0
+      },
+      "initial": "Cupos limitados",
+      "original": "Cupos limitados",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0269",
+      "group": "Precios",
+      "label": "Texto: Matrícula",
+      "type": "text",
+      "target": {
+        "node": "n0494",
+        "textIndex": 0
+      },
+      "initial": "Matrícula",
+      "original": "Matrícula",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0270",
+      "group": "Precios",
+      "label": "Texto: VIP",
+      "type": "text",
+      "target": {
+        "node": "n0493",
+        "textIndex": 0
+      },
+      "initial": "VIP",
+      "original": "VIP",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0271",
+      "group": "Precios",
+      "label": "Texto: $",
+      "type": "text",
+      "target": {
+        "node": "n0496",
+        "textIndex": 0
+      },
+      "initial": "$",
+      "original": "$",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0272",
+      "group": "Precios",
+      "label": "Texto: 997",
+      "type": "text",
+      "target": {
+        "node": "n0495",
+        "textIndex": 0
+      },
+      "initial": "997",
+      "original": "997",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0273",
+      "group": "Precios",
+      "label": "Texto: USD",
+      "type": "text",
+      "target": {
+        "node": "n0497",
+        "textIndex": 0
+      },
+      "initial": "USD",
+      "original": "USD",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0274",
+      "group": "Precios",
+      "label": "Texto: Reserva con",
+      "type": "text",
+      "target": {
+        "node": "n0498",
+        "textIndex": 0
+      },
+      "initial": "Reserva con",
+      "original": "Reserva con ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0275",
+      "group": "Precios",
+      "label": "Texto destacado: $100",
+      "type": "text",
+      "target": {
+        "node": "n0499",
+        "textIndex": 0
+      },
+      "initial": "$100",
+      "original": "$100",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0276",
+      "group": "Precios",
+      "label": "Texto: , paga por cuotas antes del",
+      "type": "text",
+      "target": {
+        "node": "n0498",
+        "textIndex": 1
+      },
+      "initial": ", paga por cuotas antes del",
+      "original": ", paga por cuotas antes del ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0277",
+      "group": "Precios",
+      "label": "Texto destacado: 30 nov 2026",
+      "type": "text",
+      "target": {
+        "node": "n0500",
+        "textIndex": 0
+      },
+      "initial": "30 nov 2026",
+      "original": "30 nov 2026",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0278",
+      "group": "Precios",
+      "label": "Texto: Incluye todos los beneficios del Ticket Regular, y adicionalmente",
+      "type": "text",
+      "target": {
+        "node": "n0502",
+        "textIndex": 0
+      },
+      "initial": "Incluye todos los beneficios del Ticket Regular, y adicionalmente:",
+      "original": "Incluye todos los beneficios del Ticket Regular, y adicionalmente:",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0279",
+      "group": "Precios",
+      "label": "Texto: Asiento preferencial reservado",
+      "type": "text",
+      "target": {
+        "node": "n0503",
+        "textIndex": 0
+      },
+      "initial": "Asiento preferencial reservado",
+      "original": "Asiento preferencial reservado",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0280",
+      "group": "Precios",
+      "label": "Texto: Badge VIP exclusivo",
+      "type": "text",
+      "target": {
+        "node": "n0506",
+        "textIndex": 0
+      },
+      "initial": "Badge VIP exclusivo",
+      "original": "Badge VIP exclusivo",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0281",
+      "group": "Precios",
+      "label": "Texto: Kit VIP premium",
+      "type": "text",
+      "target": {
+        "node": "n0509",
+        "textIndex": 0
+      },
+      "initial": "Kit VIP premium",
+      "original": "Kit VIP premium",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0282",
+      "group": "Precios",
+      "label": "Texto: Acceso prioritario / check-in rápido",
+      "type": "text",
+      "target": {
+        "node": "n0512",
+        "textIndex": 0
+      },
+      "initial": "Acceso prioritario / check-in rápido",
+      "original": "Acceso prioritario / check-in rápido",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0283",
+      "group": "Precios",
+      "label": "Texto: Foto profesional con mentores",
+      "type": "text",
+      "target": {
+        "node": "n0515",
+        "textIndex": 0
+      },
+      "initial": "Foto profesional con mentores",
+      "original": "Foto profesional con mentores",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0284",
+      "group": "Precios",
+      "label": "Texto: Acceso exclusivo al Pre-Setup Experience, el día antes del montaj",
+      "type": "text",
+      "target": {
+        "node": "n0518",
+        "textIndex": 0
+      },
+      "initial": "Acceso exclusivo al Pre-Setup Experience, el día antes del montaje, el 8 Feb 2027",
+      "original": "Acceso exclusivo al Pre-Setup Experience, el día antes del montaje, el 8 Feb 2027",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0285",
+      "group": "Precios",
+      "label": "Destino del botón: Reserva aquí",
+      "type": "link",
+      "target": {
+        "node": "n0521",
+        "attr": "href"
+      },
+      "initial": "https://square.link/u/8N03dEZe",
+      "original": "https://square.link/u/8N03dEZe",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0286",
+      "group": "Precios",
+      "label": "Texto de botón: Reserva aquí",
+      "type": "text",
+      "target": {
+        "node": "n0521",
+        "textIndex": 0
+      },
+      "initial": "Reserva aquí",
+      "original": "Reserva aquí ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0287",
+      "group": "Precios",
+      "label": "Título: Paga el balance por cuotas",
+      "type": "text",
+      "target": {
+        "node": "n0526",
+        "textIndex": 0
+      },
+      "initial": "Paga el balance por cuotas",
+      "original": "Paga el balance por cuotas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0288",
+      "group": "Precios",
+      "label": "Texto: Zelle",
+      "type": "text",
+      "target": {
+        "node": "n0528",
+        "textIndex": 0
+      },
+      "initial": "Zelle",
+      "original": "Zelle",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0289",
+      "group": "Precios",
+      "label": "Texto: Credit Cards",
+      "type": "text",
+      "target": {
+        "node": "n0529",
+        "textIndex": 0
+      },
+      "initial": "Credit Cards",
+      "original": "Credit Cards ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0290",
+      "group": "Precios",
+      "label": "Texto: 4%",
+      "type": "text",
+      "target": {
+        "node": "n0530",
+        "textIndex": 0
+      },
+      "initial": "4%",
+      "original": "4%",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0291",
+      "group": "Precios",
+      "label": "Texto: Afterpay",
+      "type": "text",
+      "target": {
+        "node": "n0531",
+        "textIndex": 0
+      },
+      "initial": "Afterpay",
+      "original": "Afterpay ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0292",
+      "group": "Precios",
+      "label": "Texto: 6%",
+      "type": "text",
+      "target": {
+        "node": "n0532",
+        "textIndex": 0
+      },
+      "initial": "6%",
+      "original": "6%",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0293",
+      "group": "Precios",
+      "label": "Título: Consultas",
+      "type": "text",
+      "target": {
+        "node": "n0534",
+        "textIndex": 0
+      },
+      "initial": "Consultas",
+      "original": "Consultas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0294",
+      "group": "Precios",
+      "label": "Texto: Galedo / Embajador Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0535",
+        "textIndex": 0
+      },
+      "initial": "Galedo / Embajador Estados Unidos",
+      "original": "Galedo / Embajador Estados Unidos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0295",
+      "group": "Precios",
+      "label": "Destino del botón: +1 (407) 535-8668",
+      "type": "link",
+      "target": {
+        "node": "n0536",
+        "attr": "href"
+      },
+      "initial": "tel:+14075358668",
+      "original": "tel:+14075358668",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0296",
+      "group": "Precios",
+      "label": "Texto de botón: +1 (407) 535-8668",
+      "type": "text",
+      "target": {
+        "node": "n0536",
+        "textIndex": 0
+      },
+      "initial": "+1 (407) 535-8668",
+      "original": "+1 (407) 535-8668",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0297",
+      "group": "Precios",
+      "label": "Destino del botón: Escríbenos por WhatsApp",
+      "type": "link",
+      "target": {
+        "node": "n0537",
+        "attr": "href"
+      },
+      "initial": "https://wa.link/o8xbwp",
+      "original": "https://wa.link/o8xbwp",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0298",
+      "group": "Precios",
+      "label": "Texto de botón: Escríbenos por WhatsApp",
+      "type": "text",
+      "target": {
+        "node": "n0537",
+        "textIndex": 0
+      },
+      "initial": "Escríbenos por WhatsApp",
+      "original": " Escríbenos por WhatsApp",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0299",
+      "group": "Cómo reservar",
+      "label": "Texto: Cómo reservar",
+      "type": "text",
+      "target": {
+        "node": "n0543",
+        "textIndex": 0
+      },
+      "initial": "Cómo reservar",
+      "original": "Cómo reservar",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0300",
+      "group": "Cómo reservar",
+      "label": "Título: Tres pasos para",
+      "type": "text",
+      "target": {
+        "node": "n0544",
+        "textIndex": 0
+      },
+      "initial": "Tres pasos para",
+      "original": "Tres pasos para ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0301",
+      "group": "Cómo reservar",
+      "label": "Texto: asegurar tu cupo",
+      "type": "text",
+      "target": {
+        "node": "n0545",
+        "textIndex": 0
+      },
+      "initial": "asegurar tu cupo",
+      "original": "asegurar tu cupo",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0302",
+      "group": "Cómo reservar",
+      "label": "Texto destacado: Escoge una opción y reserva tu cupo con solo $100.",
+      "type": "text",
+      "target": {
+        "node": "n0549",
+        "textIndex": 0
+      },
+      "initial": "Escoge una opción y reserva tu cupo con solo $100.",
+      "original": "Escoge una opción y reserva tu cupo con solo $100.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0303",
+      "group": "Cómo reservar",
+      "label": "Destino del botón: Ticket 100% Online · $397",
+      "type": "link",
+      "target": {
+        "node": "n0551",
+        "attr": "href"
+      },
+      "initial": "https://square.link/u/oXW8UZyh",
+      "original": "https://square.link/u/oXW8UZyh",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0304",
+      "group": "Cómo reservar",
+      "label": "Texto de botón: Ticket 100% Online · $397",
+      "type": "text",
+      "target": {
+        "node": "n0551",
+        "textIndex": 0
+      },
+      "initial": "Ticket 100% Online · $397",
+      "original": "Ticket 100% Online · $397 ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0305",
+      "group": "Cómo reservar",
+      "label": "Destino del botón: Ticket Regular · $697",
+      "type": "link",
+      "target": {
+        "node": "n0554",
+        "attr": "href"
+      },
+      "initial": "https://square.link/u/WeFR3bWh",
+      "original": "https://square.link/u/WeFR3bWh",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0306",
+      "group": "Cómo reservar",
+      "label": "Texto de botón: Ticket Regular · $697",
+      "type": "text",
+      "target": {
+        "node": "n0554",
+        "textIndex": 0
+      },
+      "initial": "Ticket Regular · $697",
+      "original": "Ticket Regular · $697 ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0307",
+      "group": "Cómo reservar",
+      "label": "Destino del botón: Ticket VIP · $997",
+      "type": "link",
+      "target": {
+        "node": "n0557",
+        "attr": "href"
+      },
+      "initial": "https://square.link/u/8N03dEZe",
+      "original": "https://square.link/u/8N03dEZe",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0308",
+      "group": "Cómo reservar",
+      "label": "Texto de botón: Ticket VIP · $997",
+      "type": "text",
+      "target": {
+        "node": "n0557",
+        "textIndex": 0
+      },
+      "initial": "Ticket VIP · $997",
+      "original": "Ticket VIP · $997 ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0309",
+      "group": "Cómo reservar",
+      "label": "Texto: Recibirás en un plazo de",
+      "type": "text",
+      "target": {
+        "node": "n0561",
+        "textIndex": 0
+      },
+      "initial": "Recibirás en un plazo de",
+      "original": "Recibirás en un plazo de ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0310",
+      "group": "Cómo reservar",
+      "label": "Texto destacado: 24 h",
+      "type": "text",
+      "target": {
+        "node": "n0562",
+        "textIndex": 0
+      },
+      "initial": "24 h",
+      "original": "24 h",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0311",
+      "group": "Cómo reservar",
+      "label": "Texto: el invoice en tu correo con el saldo.",
+      "type": "text",
+      "target": {
+        "node": "n0561",
+        "textIndex": 1
+      },
+      "initial": "el invoice en tu correo con el saldo.",
+      "original": " el invoice en tu correo con el saldo.",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0312",
+      "group": "Cómo reservar",
+      "label": "Texto: Podrás realizar tus abonos por",
+      "type": "text",
+      "target": {
+        "node": "n0564",
+        "textIndex": 0
+      },
+      "initial": "Podrás realizar tus abonos por",
+      "original": "Podrás realizar tus abonos por ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0313",
+      "group": "Cómo reservar",
+      "label": "Texto destacado: Zelle",
+      "type": "text",
+      "target": {
+        "node": "n0565",
+        "textIndex": 0
+      },
+      "initial": "Zelle",
+      "original": "Zelle",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0314",
+      "group": "Cómo reservar",
+      "label": "Texto: o directamente con",
+      "type": "text",
+      "target": {
+        "node": "n0564",
+        "textIndex": 1
+      },
+      "initial": "o directamente con",
+      "original": " o directamente con ",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": " "
+    },
+    {
+      "id": "f0315",
+      "group": "Cómo reservar",
+      "label": "Texto destacado: tarjeta",
+      "type": "text",
+      "target": {
+        "node": "n0566",
+        "textIndex": 0
+      },
+      "initial": "tarjeta",
+      "original": "tarjeta",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0316",
+      "group": "Cómo reservar",
+      "label": "Texto: en el invoice recibido.",
+      "type": "text",
+      "target": {
+        "node": "n0564",
+        "textIndex": 2
+      },
+      "initial": "en el invoice recibido.",
+      "original": " en el invoice recibido.",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0317",
+      "group": "Cómo reservar",
+      "label": "Texto: La cuenta para realizar los abonos por Zelle será enviada al reci",
+      "type": "text",
+      "target": {
+        "node": "n0567",
+        "textIndex": 0
+      },
+      "initial": "La cuenta para realizar los abonos por Zelle será enviada al recibir el invoice.",
+      "original": "La cuenta para realizar los abonos por Zelle será enviada al recibir el invoice.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0318",
+      "group": "Cómo reservar",
+      "label": "Texto: Medios de pago: Zelle, tarjeta de crédito y Afterpay",
+      "type": "text",
+      "target": {
+        "node": "n0569",
+        "textIndex": 0
+      },
+      "initial": "Medios de pago: Zelle, tarjeta de crédito y Afterpay",
+      "original": "Medios de pago: Zelle, tarjeta de crédito y Afterpay",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0319",
+      "group": "Cómo reservar",
+      "label": "Texto: Todos los pagos con tarjeta tendrán 4% fee",
+      "type": "text",
+      "target": {
+        "node": "n0572",
+        "textIndex": 0
+      },
+      "initial": "Todos los pagos con tarjeta tendrán 4% fee",
+      "original": "Todos los pagos con tarjeta tendrán 4% fee",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0320",
+      "group": "Cómo reservar",
+      "label": "Texto: Todos los pagos con Afterpay tendrán 6% fee",
+      "type": "text",
+      "target": {
+        "node": "n0575",
+        "textIndex": 0
+      },
+      "initial": "Todos los pagos con Afterpay tendrán 6% fee",
+      "original": "Todos los pagos con Afterpay tendrán 6% fee",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0321",
+      "group": "Comunidad",
+      "label": "Texto: Comunidad de WhatsApp",
+      "type": "text",
+      "target": {
+        "node": "n0585",
+        "textIndex": 0
+      },
+      "initial": "Comunidad de WhatsApp",
+      "original": "Comunidad de WhatsApp",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0322",
+      "group": "Comunidad",
+      "label": "Título: Comunidad R-",
+      "type": "text",
+      "target": {
+        "node": "n0586",
+        "textIndex": 0
+      },
+      "initial": "Comunidad R-",
+      "original": "Comunidad R-",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0323",
+      "group": "Comunidad",
+      "label": "Texto: evolución",
+      "type": "text",
+      "target": {
+        "node": "n0587",
+        "textIndex": 0
+      },
+      "initial": "evolución",
+      "original": "evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0324",
+      "group": "Comunidad",
+      "label": "Título: Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0586",
+        "textIndex": 1
+      },
+      "initial": "Estados Unidos",
+      "original": " Estados Unidos",
+      "encoding": "text",
+      "prefix": " ",
+      "suffix": ""
+    },
+    {
+      "id": "f0325",
+      "group": "Comunidad",
+      "label": "Texto: Si estás interesado en recibir las nuevas notificaciones y anunci",
+      "type": "multiline",
+      "target": {
+        "node": "n0588",
+        "textIndex": 0
+      },
+      "initial": "Si estás interesado en recibir las nuevas notificaciones y anuncios de R-evolución Estados Unidos, ingresa a la comunidad en este enlace.",
+      "original": "Si estás interesado en recibir las nuevas notificaciones y anuncios de R-evolución Estados Unidos, ingresa a la comunidad en este enlace.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0326",
+      "group": "Comunidad",
+      "label": "Destino del botón: Unirme a la comunidad",
+      "type": "link",
+      "target": {
+        "node": "n0589",
+        "attr": "href"
+      },
+      "initial": "https://chat.whatsapp.com/FLt8Z68qZtJ8Hq6O4dzo37",
+      "original": "https://chat.whatsapp.com/FLt8Z68qZtJ8Hq6O4dzo37",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0327",
+      "group": "Comunidad",
+      "label": "Texto de botón: Unirme a la comunidad",
+      "type": "text",
+      "target": {
+        "node": "n0589",
+        "textIndex": 0
+      },
+      "initial": "Unirme a la comunidad",
+      "original": "Unirme a la comunidad ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0328",
+      "group": "Cierre",
+      "label": "Imagen: Graduadas de R-evolución con sus diplomas frente al letrero de R-",
+      "type": "image",
+      "target": {
+        "node": "n0598",
+        "attr": "src"
+      },
+      "initial": "assets/images/imagen-09.jpg",
+      "original": "assets/images/imagen-09.jpg",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0329",
+      "group": "Cierre",
+      "label": "Descripción de la imagen",
+      "type": "text",
+      "target": {
+        "node": "n0598",
+        "attr": "alt"
+      },
+      "initial": "Graduadas de R-evolución con sus diplomas frente al letrero de R-evolución",
+      "original": "Graduadas de R-evolución con sus diplomas frente al letrero de R-evolución",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0330",
+      "group": "Cierre",
+      "label": "Título: Hoy es tu",
+      "type": "text",
+      "target": {
+        "node": "n0599",
+        "textIndex": 0
+      },
+      "initial": "Hoy es tu",
+      "original": "Hoy es tu ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0331",
+      "group": "Cierre",
+      "label": "Texto: Turno!",
+      "type": "text",
+      "target": {
+        "node": "n0600",
+        "textIndex": 0
+      },
+      "initial": "Turno!",
+      "original": "Turno!",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0332",
+      "group": "Cierre",
+      "label": "Texto: Transforma tu vida con R-evolución",
+      "type": "text",
+      "target": {
+        "node": "n0601",
+        "textIndex": 0
+      },
+      "initial": "Transforma tu vida con R-evolución",
+      "original": "Transforma tu vida con R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0333",
+      "group": "Cierre",
+      "label": "Cifra: NOS VEMOS EL 26 OCT!!",
+      "type": "text",
+      "target": {
+        "node": "n0603",
+        "textIndex": 0
+      },
+      "initial": "NOS VEMOS EL 26 OCT!!",
+      "original": "NOS VEMOS EL 26 OCT!!",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0334",
+      "group": "Cierre",
+      "label": "Destino del botón: Matricúlate",
+      "type": "link",
+      "target": {
+        "node": "n0605",
+        "attr": "href"
+      },
+      "initial": "#inversion",
+      "original": "#inversion",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0335",
+      "group": "Cierre",
+      "label": "Texto de botón: Matricúlate",
+      "type": "text",
+      "target": {
+        "node": "n0605",
+        "textIndex": 0
+      },
+      "initial": "Matricúlate",
+      "original": "Matricúlate ",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": " "
+    },
+    {
+      "id": "f0336",
+      "group": "Cierre",
+      "label": "Destino del botón: Síguenos en Instagram",
+      "type": "link",
+      "target": {
+        "node": "n0608",
+        "attr": "href"
+      },
+      "initial": "https://www.instagram.com/galedollc/",
+      "original": "https://www.instagram.com/galedollc/",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0337",
+      "group": "Cierre",
+      "label": "Texto de botón: Síguenos en Instagram",
+      "type": "text",
+      "target": {
+        "node": "n0608",
+        "textIndex": 0
+      },
+      "initial": "Síguenos en Instagram",
+      "original": "Síguenos en Instagram",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0338",
+      "group": "Pie de página",
+      "label": "Destino del botón: ",
+      "type": "link",
+      "target": {
+        "node": "n0612",
+        "attr": "href"
+      },
+      "initial": "#inicio",
+      "original": "#inicio",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0339",
+      "group": "Pie de página",
+      "label": "Imagen: Galedo Party Designers",
+      "type": "image",
+      "target": {
+        "node": "n0614",
+        "attr": "src"
+      },
+      "initial": "assets/images/imagen-04.png",
+      "original": "assets/images/imagen-04.png",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0340",
+      "group": "Pie de página",
+      "label": "Descripción de la imagen",
+      "type": "text",
+      "target": {
+        "node": "n0614",
+        "attr": "alt"
+      },
+      "initial": "Galedo Party Designers",
+      "original": "Galedo Party Designers",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0341",
+      "group": "Pie de página",
+      "label": "Texto: Certifícate como Professional Party Designer.",
+      "type": "text",
+      "target": {
+        "node": "n0615",
+        "textIndex": 0
+      },
+      "initial": "Certifícate como Professional Party Designer.",
+      "original": "Certifícate como Professional Party Designer.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0342",
+      "group": "Pie de página",
+      "label": "Texto: Orlando, FL. 2026 – 2027.",
+      "type": "text",
+      "target": {
+        "node": "n0615",
+        "textIndex": 1
+      },
+      "initial": "Orlando, FL. 2026 – 2027.",
+      "original": "Orlando, FL. 2026 – 2027.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0343",
+      "group": "Pie de página",
+      "label": "Texto: Avalado por Universidad Señor de Sipán (USS).",
+      "type": "text",
+      "target": {
+        "node": "n0615",
+        "textIndex": 2
+      },
+      "initial": "Avalado por Universidad Señor de Sipán (USS).",
+      "original": "Avalado por Universidad Señor de Sipán (USS).",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0344",
+      "group": "Pie de página",
+      "label": "Texto: Síguenos",
+      "type": "text",
+      "target": {
+        "node": "n0619",
+        "textIndex": 0
+      },
+      "initial": "Síguenos",
+      "original": "Síguenos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0345",
+      "group": "Pie de página",
+      "label": "Destino del botón: Instagram · Galedo Party Designers",
+      "type": "link",
+      "target": {
+        "node": "n0622",
+        "attr": "href"
+      },
+      "initial": "https://www.instagram.com/galedollc/",
+      "original": "https://www.instagram.com/galedollc/",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0346",
+      "group": "Pie de página",
+      "label": "Texto de botón: Instagram · Galedo Party Designers",
+      "type": "text",
+      "target": {
+        "node": "n0622",
+        "textIndex": 0
+      },
+      "initial": "Instagram · Galedo Party Designers",
+      "original": "Instagram · Galedo Party Designers",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0347",
+      "group": "Pie de página",
+      "label": "Destino del botón: WhatsApp · Comunidad R-evolución EE. UU.",
+      "type": "link",
+      "target": {
+        "node": "n0624",
+        "attr": "href"
+      },
+      "initial": "https://chat.whatsapp.com/FLt8Z68qZtJ8Hq6O4dzo37",
+      "original": "https://chat.whatsapp.com/FLt8Z68qZtJ8Hq6O4dzo37",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0348",
+      "group": "Pie de página",
+      "label": "Texto de botón: WhatsApp · Comunidad R-evolución EE. UU.",
+      "type": "text",
+      "target": {
+        "node": "n0624",
+        "textIndex": 0
+      },
+      "initial": "WhatsApp · Comunidad R-evolución EE. UU.",
+      "original": "WhatsApp · Comunidad R-evolución EE. UU.",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0349",
+      "group": "Pie de página",
+      "label": "Destino del botón: Instagram · Revolución Event",
+      "type": "link",
+      "target": {
+        "node": "n0626",
+        "attr": "href"
+      },
+      "initial": "https://www.instagram.com/revolucionevent",
+      "original": "https://www.instagram.com/revolucionevent",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0350",
+      "group": "Pie de página",
+      "label": "Texto de botón: Instagram · Revolución Event",
+      "type": "text",
+      "target": {
+        "node": "n0626",
+        "textIndex": 0
+      },
+      "initial": "Instagram · Revolución Event",
+      "original": "Instagram · Revolución Event",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0351",
+      "group": "Pie de página",
+      "label": "Texto: Consultas",
+      "type": "text",
+      "target": {
+        "node": "n0628",
+        "textIndex": 0
+      },
+      "initial": "Consultas",
+      "original": "Consultas",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0352",
+      "group": "Pie de página",
+      "label": "Texto: Galedo / Embajador Estados Unidos",
+      "type": "text",
+      "target": {
+        "node": "n0630",
+        "textIndex": 0
+      },
+      "initial": "Galedo / Embajador Estados Unidos",
+      "original": "Galedo / Embajador Estados Unidos",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0353",
+      "group": "Pie de página",
+      "label": "Destino del botón: +1 (407) 535-8668",
+      "type": "link",
+      "target": {
+        "node": "n0632",
+        "attr": "href"
+      },
+      "initial": "tel:+14075358668",
+      "original": "tel:+14075358668",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0354",
+      "group": "Pie de página",
+      "label": "Texto de botón: +1 (407) 535-8668",
+      "type": "text",
+      "target": {
+        "node": "n0632",
+        "textIndex": 0
+      },
+      "initial": "+1 (407) 535-8668",
+      "original": "+1 (407) 535-8668",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0355",
+      "group": "Pie de página",
+      "label": "Destino del botón: WhatsApp · Escríbenos directamente",
+      "type": "link",
+      "target": {
+        "node": "n0634",
+        "attr": "href"
+      },
+      "initial": "https://wa.link/o8xbwp",
+      "original": "https://wa.link/o8xbwp",
+      "encoding": "attr"
+    },
+    {
+      "id": "f0356",
+      "group": "Pie de página",
+      "label": "Texto de botón: WhatsApp · Escríbenos directamente",
+      "type": "text",
+      "target": {
+        "node": "n0634",
+        "textIndex": 0
+      },
+      "initial": "WhatsApp · Escríbenos directamente",
+      "original": "WhatsApp · Escríbenos directamente",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0357",
+      "group": "Pie de página",
+      "label": "Texto: Organizador Oficial Estados Unidos · 1ra Generación Estados Unido",
+      "type": "text",
+      "target": {
+        "node": "n0635",
+        "textIndex": 0
+      },
+      "initial": "Organizador Oficial Estados Unidos · 1ra Generación Estados Unidos · 7ma Generación R-evolución",
+      "original": "Organizador Oficial Estados Unidos · 1ra Generación Estados Unidos · 7ma Generación R-evolución",
+      "encoding": "text",
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "id": "f0358",
+      "group": "Imágenes de marca",
+      "label": "Fotografía de fondo de la portada",
+      "type": "image",
+      "target": {
+        "selector": ".hero",
+        "cssImage": true
+      },
+      "initial": "assets/images/imagen-01.jpg",
+      "original": "../images/imagen-01.jpg",
+      "encoding": "css"
+    },
+    {
+      "id": "f0359",
+      "group": "Imágenes de marca",
+      "label": "Logotipo R-evolución",
+      "type": "image",
+      "target": {
+        "selector": ".logo-rev",
+        "cssImage": true
+      },
+      "initial": "assets/images/imagen-02.png",
+      "original": "../images/imagen-02.png",
+      "encoding": "css"
+    },
+    {
+      "id": "f0360",
+      "group": "Cuenta atrás",
+      "label": "Inicio de la cuenta atrás (hora de Miami)",
+      "type": "datetime",
+      "target": {
+        "countdown": true
+      },
+      "initial": "2026-10-26T10:00",
+      "original": "Date.UTC(2026,9,26,14,0,0)",
+      "encoding": "datetime",
+      "related": [
+        "f0038",
+        "f0202"
+      ]
+    }
+  ]
+}

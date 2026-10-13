@@ -103,8 +103,8 @@
     {
       "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,600&display=swap",
       "path": "public_html/assets/css/fonts.css",
-      "bytes": 1566,
-      "sha256": "3dda396b33dd238dc4d42d349d1ceafc3e4dd8c4010edd703eaa3637980a5113",
+      "bytes": 9337,
+      "sha256": "fd0b8b94307cd95ef1cdbb42fd272d6fa102cf25ae6923c024f42e8c78b9ddc2",
       "content_type": "text/css; charset=utf-8"
     },
     {
@@ -169,6 +169,69 @@
       "bytes": 111168,
       "sha256": "ef1515fa19156794b36e5f362c677f78837c38ccdd6fa1fa76d1dd918ea7abbe",
       "content_type": "font/ttf"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGGInHEVA.woff2",
+      "path": "public_html/assets/fonts/modern-01.woff2",
+      "bytes": 30736,
+      "sha256": "776f6dcaf03636cd69a5802c94808cc8896c0a66c8e9ce0fe147231b6ee01957",
+      "content_type": "font/woff2"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGHInHEVA.woff2",
+      "path": "public_html/assets/fonts/modern-02.woff2",
+      "bytes": 12984,
+      "sha256": "b50a9d90a5264f20d1e45be0b948fe947ddb3644557f1e85ef5d3bd06427c944",
+      "content_type": "font/woff2"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2",
+      "path": "public_html/assets/fonts/modern-03.woff2",
+      "bytes": 76888,
+      "sha256": "a79fdb52d4a5c76552452f69202add96e287401fff03d3e8c0e38b4dcb5a99cd",
+      "content_type": "font/woff2"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DQ.woff2",
+      "path": "public_html/assets/fonts/modern-04.woff2",
+      "bytes": 20156,
+      "sha256": "4ba7d3d096695818fe0686be4f1e82c6b05134e18a22260336130335027462dd",
+      "content_type": "font/woff2"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4q9DbZs.woff2",
+      "path": "public_html/assets/fonts/modern-05.woff2",
+      "bytes": 10280,
+      "sha256": "bf7828e2c258cffcfa50a048ee388a36b95bc16b452e8d36fa797635dbe15965",
+      "content_type": "font/woff2"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7.woff2",
+      "path": "public_html/assets/fonts/modern-06.woff2",
+      "bytes": 38804,
+      "sha256": "54af24bd0f911f0fd7399d5445ea2023ff501d6a69f2d728f1213072f977ab14",
+      "content_type": "font/woff2"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnohkk72xU.woff2",
+      "path": "public_html/assets/fonts/modern-07.woff2",
+      "bytes": 23304,
+      "sha256": "51b2dac698333379dc3a3486393fba787d17f1dcbcb50f46582ca759d53c25fc",
+      "content_type": "font/woff2"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojEk72xU.woff2",
+      "path": "public_html/assets/fonts/modern-08.woff2",
+      "bytes": 23380,
+      "sha256": "b9dff4aec6d8ef27af595330c808c455fcc3ff46881642aa6028ed4e27a96f89",
+      "content_type": "font/woff2"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojUk72xU.woff2",
+      "path": "public_html/assets/fonts/modern-09.woff2",
+      "bytes": 9568,
+      "sha256": "6b8bfd228577635a5f45bee13c8dd4a900eba6aeb36af1680838aea3cbd7e412",
+      "content_type": "font/woff2"
     }
   ],
   "failures": []

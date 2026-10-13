@@ -1,0 +1,60 @@
+"""Construcción sin dependencias: los textos se escapan y las rutas se validan."""
+from pathlib import Path
+import json,re,html,posixpath,sys
+from datetime import datetime,timezone
+from zoneinfo import ZoneInfo
+from urllib.parse import urlsplit,quote
+
+ROOT=Path(__file__).resolve().parents[1]
+def valid_url(value,media=False):
+ if not isinstance(value,str) or any(ord(c)<32 for c in value) or '\\' in value or any(c in value for c in ['"',"'",'<','>','(',')']):return False
+ p=urlsplit(value)
+ if media:
+  if p.scheme:return p.scheme=='https' and bool(p.netloc) and not p.username and not p.password
+  return bool(re.fullmatch(r'(assets|videos)/[A-Za-z0-9_./%+ -]+',value)) and '..' not in p.path.split('/')
+ if p.scheme:return p.scheme in ['https','http','tel','mailto'] and not p.username and not p.password
+ return bool(value) and not value.startswith('//') and '..' not in p.path.split('/')
+
+def render(schema,content,source):
+ values=content['values'];specs={f['id']:f for f in schema['fields']}
+ if content.get('version')!=1 or set(values)!=set(specs):raise ValueError('La estructura de contenido no coincide con el editor.')
+ for fid,value in values.items():
+  f=specs[fid]
+  if not isinstance(value,str) or len(value)>12000:raise ValueError('Texto no válido: '+fid)
+  if f['type'] in ['link','image','video'] and not valid_url(value,f['type']!='link'):raise ValueError('Enlace no válido: '+fid)
+  if f['type']=='datetime':
+   dt=datetime.strptime(value,'%Y-%m-%dT%H:%M').replace(tzinfo=ZoneInfo('America/New_York'))
+   if dt.astimezone(timezone.utc).astimezone(ZoneInfo('America/New_York')).strftime('%Y-%m-%dT%H:%M')!=value:raise ValueError('Hora inexistente por el cambio de horario de Miami.')
+ def replace(m):
+  fid=m.group(1);f=specs[fid];value=values[fid]
+  if value==f['initial']:return f['original']
+  encoding=f['encoding']
+  if encoding=='datetime':
+   dt=datetime.strptime(value,'%Y-%m-%dT%H:%M').replace(tzinfo=ZoneInfo('America/New_York')).astimezone(timezone.utc)
+   return 'Date.parse('+json.dumps(dt.isoformat())+')'
+  if encoding=='css':
+   path=value if urlsplit(value).scheme else posixpath.relpath(value,'assets/css')
+   return quote(path,safe='/:%?=&+#-._~')
+  if encoding=='attr':return html.escape(value,quote=True)
+  return f.get('prefix','')+html.escape(value,quote=False)+f.get('suffix','')
+ result=re.sub(r'\{\{cms:(f\d+)\}\}',replace,source)
+ countdown=next(f for f in schema['fields'] if f['type']=='datetime')
+ value=values[countdown['id']]
+ if value!=countdown['initial']:
+  dt=datetime.strptime(value,'%Y-%m-%dT%H:%M')
+  months=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+  human=f'{dt.day} de {months[dt.month-1]} de {dt.year}, {dt.hour%12 or 12}:{dt.minute:02d} '+('p. m.' if dt.hour>=12 else 'a. m.')+' (hora de Miami)'
+  result=result.replace('26 de octubre de 2026, 10:00 a. m. (hora de Miami)',human)
+ return result
+
+def build():
+ schema=json.loads((ROOT/'public_html/admin/schema.json').read_text())
+ content=json.loads((ROOT/'content/site.json').read_text())
+ for src,dst in [('index.html','index.html'),('styles.css','assets/css/styles.css'),('main.js','assets/js/main.js')]:
+  result=render(schema,content,(ROOT/'sources'/src).read_text())
+  (ROOT/'public_html'/dst).write_text(result)
+ directory=ROOT/'public_html/content';directory.mkdir(exist_ok=True)
+ (directory/'site.json').write_text(json.dumps(content,ensure_ascii=False,indent=2)+'\n')
+ print('Contenido construido:',len(schema['fields']),'campos')
+
+if __name__=='__main__':build()

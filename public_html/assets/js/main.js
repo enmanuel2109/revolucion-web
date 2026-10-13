@@ -2,7 +2,17 @@
 (function(){
   try{
     var target=Date.UTC(2026,9,26,14,0,0); // 26 oct 2026, 10:00 a. m. Miami (EDT, UTC-4)
+    var timer=null, previewLabel=null;
+    if(new URLSearchParams(window.location.search).get('editor-preview')==='1'){
+      window.addEventListener('editor-countdown',function(e){
+        if(!e.detail || !Number.isFinite(e.detail.timestamp)) return;
+        if(target===e.detail.timestamp) return;
+        target=e.detail.timestamp; previewLabel=e.detail.label;
+        clearTimeout(timer); tick();
+      });
+    }
     var boxes=document.querySelectorAll('[data-cd]');
+    boxes.forEach(function(b){ b.__initialCountdownNote=b.querySelector('.cd-note').innerHTML; });
     function pad(n){return n<10?'0'+n:''+n;}
     function tick(){
       var diff=target-Date.now();
@@ -12,11 +22,13 @@
           b.querySelector('.cd-note').innerHTML='<strong>¡R-evolución ya comenzó!</strong> Primera clase: 26 de octubre de 2026, 10:00 a. m. (hora de Miami)';
           return;
         }
+        if(b.querySelector('.cd-grid').hidden){ b.querySelector('.cd-note').innerHTML=b.__initialCountdownNote; }
+        b.querySelector('.cd-grid').hidden=false;
         var t=Math.floor(diff/1000);
         var v={d:Math.floor(t/86400),h:Math.floor(t%86400/3600),m:Math.floor(t%3600/60),s:t%60};
         for(var k in v){var el=b.querySelector('[data-u="'+k+'"]'); if(el) el.textContent=k==='d'?String(v[k]):pad(v[k]);}
       });
-      if(diff>0) setTimeout(tick,1000);
+      if(diff>0) timer=setTimeout(tick,1000);
     }
     tick();
   }catch(e){}

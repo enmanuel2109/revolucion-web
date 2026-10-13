@@ -23,6 +23,15 @@ jobs:
     steps:
       - name: Descargar archivos del repositorio
         uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar y construir el contenido
+        run: |
+          python scripts/build.py
+          python -m unittest discover -s tests -p 'test_*.py'
+          node --test tests/editor.test.mjs
       - name: Configurar Pages
         uses: actions/configure-pages@v5
       - name: Preparar archivos de la web
