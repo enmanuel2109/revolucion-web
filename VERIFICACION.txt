@@ -1,0 +1,11 @@
+Página HTML: 1
+Imágenes distintas: 9
+Vídeos MP4: 3
+Portadas JPG: 3
+Archivos de fuentes: 9
+Referencias locales verificadas: 28
+Anclas verificadas: 104
+Recursos ausentes: 0
+Descargas fallidas: 0
+Verificación visual en navegador: no realizada.
+Sintaxis JavaScript (node --check): correcta.
