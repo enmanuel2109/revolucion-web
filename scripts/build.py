@@ -1,6 +1,6 @@
 """Construcción sin dependencias: los textos se escapan y las rutas se validan."""
 from pathlib import Path
-import json,re,html,posixpath,sys
+import json,re,html,posixpath,sys,hashlib
 from datetime import datetime,timezone
 from zoneinfo import ZoneInfo
 from urllib.parse import urlsplit,quote
@@ -55,6 +55,21 @@ def build():
   (ROOT/'public_html'/dst).write_text(result)
  directory=ROOT/'public_html/content';directory.mkdir(exist_ok=True)
  (directory/'site.json').write_text(json.dumps(content,ensure_ascii=False,indent=2)+'\n')
+ # Versionar recursos evita que el navegador conserve código o estilos anteriores.
+ def stamp(text,path):
+  digest=hashlib.sha256((ROOT/'public_html'/path).read_bytes()).hexdigest()[:12]
+  return re.sub(re.escape(path)+r'(?:\?v=[a-f0-9]+)?',path+'?v='+digest,text)
+ page=ROOT/'public_html/index.html';text=page.read_text()
+ for asset in ['assets/css/fonts.css','assets/css/styles.css','assets/css/mobile-fixes.css','assets/js/main.js']:text=stamp(text,asset)
+ page.write_text(text)
+ editor=ROOT/'public_html/admin/editor.mjs';text=editor.read_text()
+ digest=hashlib.sha256((ROOT/'public_html/admin/core.mjs').read_bytes()).hexdigest()[:12]
+ text=re.sub(r'\./core\.mjs(?:\?v=[a-f0-9]+)?','./core.mjs?v='+digest,text);editor.write_text(text)
+ admin=ROOT/'public_html/admin/index.html';text=admin.read_text()
+ for asset in ['editor.css','editor.mjs']:
+  digest=hashlib.sha256((ROOT/'public_html/admin'/asset).read_bytes()).hexdigest()[:12]
+  text=re.sub(re.escape(asset)+r'(?:\?v=[a-f0-9]+)?',asset+'?v='+digest,text)
+ admin.write_text(text)
  print('Contenido construido:',len(schema['fields']),'campos')
 
 if __name__=='__main__':build()

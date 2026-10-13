@@ -7,7 +7,7 @@
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: https:; media-src 'self' blob: https:; connect-src 'self' https://api.github.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>Panel de edición · R-evolución</title>
-  <link rel="stylesheet" href="editor.css">
+  <link rel="stylesheet" href="editor.css?v=fabf5cfb73d0">
 </head>
 <body>
   <header class="toolbar">
@@ -37,6 +37,6 @@
     <details><summary>Crear mi acceso por primera vez</summary><ol><li>Abre <a href="https://github.com/settings/personal-access-tokens/new?name=Editor+Revolucion&target_name=enmanuel2109&expires_in=90&contents=write" target="_blank" rel="noopener noreferrer">Crear clave en GitHub ↗</a>.</li><li>En <strong>Resource owner</strong>, selecciona <strong>enmanuel2109</strong>.</li><li>Selecciona <strong>Only select repositories</strong> y marca <strong>revolucion-web</strong>.</li><li>En permisos del repositorio, concede únicamente <strong>Contents → Read and write</strong>.</li><li>Genera la clave, cópiala y pégala en este panel.</li></ol><p>Para que otra persona publique con su propia cuenta, el propietario debe añadirla como colaboradora del repositorio. Cada editor utiliza su propio acceso; no hace falta compartir la contraseña de GitHub.</p><p>Guarda tu clave en tu gestor de contraseñas. El panel no la guarda en el navegador ni en la web. No la envíes por chat ni la pegues en un campo de contenido.</p></details>
   </dialog>
   <dialog id="draft-dialog" aria-labelledby="draft-title"><h2 id="draft-title">Hay un borrador de esta sesión</h2><p>Encontré cambios sin publicar. Puedes recuperarlos o comenzar con la última versión de GitHub.</p><button id="restore-draft" class="primary">Recuperar borrador</button><button id="discard-draft" class="secondary">Usar versión de GitHub</button></dialog>
-  <script type="module" src="editor.mjs"></script>
+  <script type="module" src="editor.mjs?v=60212831f8f0"></script>
 </body>
 </html>

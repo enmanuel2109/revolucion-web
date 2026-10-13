@@ -1,4 +1,4 @@
-import { API, REPOSITORY, CONTENT_PATH, GitHubClient, validateContent, safeURL, decodeBase64, fileName, miamiTimestamp } from './core.mjs';
+import { API, REPOSITORY, CONTENT_PATH, GitHubClient, validateContent, safeURL, decodeBase64, fileName, miamiTimestamp } from './core.mjs?v=3859e0824587';
 
 const $ = id => document.getElementById(id);
 const frame = $('preview');
@@ -279,6 +279,7 @@ async function start() {
     if (!response.ok) throw new Error('No se encontró la configuración del editor.');
     schema = await response.json(); fieldsByID = new Map(schema.fields.map(f => [f.id, f]));
     await loadContent(); populateGroups(); renderFields(); onFrameLoad(); buttons();
+    frame.src = `../index.html?editor-preview=1&v=${Date.now()}`;
     message('Selecciona un texto o una sección para empezar.');
     try {
       const draft = JSON.parse(sessionStorage.getItem(DRAFT_KEY));
