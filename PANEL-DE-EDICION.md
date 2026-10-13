@@ -46,6 +46,8 @@ Si otra persona cambia el contenido mientras editas, la publicación se bloquea 
 
 Se conservan el contenido inicial, los 9 archivos de imagen distintos, 3 vídeos, 3 portadas, las fuentes locales, SVG, anclas, precios y enlaces originales. Solo se añaden atributos invisibles para vincular los campos al editor y una función de vista previa de la cuenta atrás.
 
+La revisión visual corrigió las fuentes locales para utilizar las variantes WOFF2 equivalentes a las del navegador del original. También se añadió `assets/css/mobile-fixes.css`, limitado a pantallas de 360 píxeles o menos, para corregir un desbordamiento del encabezado y contenido que ya existía en pantallas muy estrechas. El CSS principal original permanece intacto.
+
 El editor cambia contenido dentro del diseño existente. No es un constructor para mover bloques, añadir páginas o cambiar libremente la estructura. Los botones de contacto y pago conservan sus destinos originales hasta que los sustituyas desde el panel.
 
 ## Comprobaciones

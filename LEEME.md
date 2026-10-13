@@ -15,6 +15,10 @@ Para verlo en tu ordenador, abre `public_html/index.html`. Si prefieres servirlo
 
 ## Personalizar
 
+**La opción recomendada ahora es el panel:** https://enmanuel2109.github.io/revolucion-web/admin/. Consulta `PANEL-DE-EDICION.md` para configurar tu acceso y cambiar contenido sin código.
+
+Los archivos HTML, CSS principal y JavaScript principal de `public_html/` se generan al publicar. Para cambios técnicos utiliza `sources/`; para contenido usa el panel o `content/site.json`. La tabla siguiente describe los archivos de salida, pero modificarlos directamente no cambia las plantillas y la siguiente construcción los regenerará.
+
 | Archivo | Qué editar |
 | --- | --- |
 | `public_html/index.html` | Textos, títulos, precios, calendario, contactos, enlaces, etiquetas SEO y estructura |
@@ -38,4 +42,4 @@ Square, WhatsApp e Instagram siguen siendo enlaces externos. El ZIP no contiene 
 
 `original-home.html.txt` conserva el HTML original exacto como referencia. No hace falta subirlo al hosting. `inventario.json` lista los recursos capturados con tamaño y hash SHA-256; `VERIFICACION.txt` documenta los controles realizados y sus límites.
 
-La verificación del paquete comprueba archivos locales, anclas, recursos referenciados y sintaxis JavaScript. No se realizó una comparación visual automatizada en navegador.
+La revisión actual incluye pruebas automáticas y comprobaciones visuales en navegador. `VERIFICACION.txt` recoge el alcance y sus límites. El ZIP `revolucion-web-editable.zip` se conserva como copia inicial anterior al panel; el repositorio contiene la versión actual.

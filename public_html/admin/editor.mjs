@@ -7,6 +7,7 @@ let schema, content, savedContent, baseSHA, client = null, busy = false, dirty =
 const uploads = new Map();
 const objectURLs = new Map();
 let fieldsByID = new Map(), draftCandidate = null;
+const attachedDocuments = new WeakSet();
 
 function message(text, error = false) { $('status').textContent = text; $('status').classList.toggle('error', error); }
 function buttons() {
@@ -51,7 +52,7 @@ function renderFields(focusID) {
   const group = $('group').value;
   const shown = schema.fields.filter(f => (group === '__all' || f.group === group) && (!query || `${f.label} ${f.group} ${content.values[f.id]}`.toLocaleLowerCase('es').includes(query)));
   $('fields').replaceChildren();
-  $('field-count').textContent = `${shown.length} campos en esta selección`;
+  $('field-count').textContent = `${shown.length} ${shown.length === 1 ? 'campo' : 'campos'} en esta selección`;
   for (const field of shown) {
     const card = document.createElement('div'); card.className = 'field'; card.id = `card-${field.id}`;
     const input = document.createElement(field.type === 'multiline' ? 'textarea' : 'input');
@@ -181,7 +182,7 @@ function selectFromPreview(event) {
 function onFrameLoad() {
   applyPreview();
   const doc = frame.contentDocument;
-  if (doc) doc.addEventListener('click', selectFromPreview);
+  if (doc && !attachedDocuments.has(doc)) { doc.addEventListener('click', selectFromPreview); attachedDocuments.add(doc); }
 }
 
 function downloadDraft() {
@@ -269,7 +270,8 @@ for (const button of document.querySelectorAll('[data-width]')) button.addEventL
 });
 frame.addEventListener('load', onFrameLoad);
 window.addEventListener('beforeunload', event => { if (dirty || busy) { event.preventDefault(); event.returnValue = ''; } });
-window.addEventListener('pagehide', () => client?.clear());
+window.addEventListener('pagehide', () => { client?.clear(); client = null; });
+window.addEventListener('pageshow', () => { if (!client) { $('connection').textContent = 'Sin conexión para publicar'; $('access').textContent = 'Conectar acceso'; $('disconnect').hidden = true; } });
 
 async function start() {
   try {

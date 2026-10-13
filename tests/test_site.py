@@ -34,6 +34,7 @@ class SiteTests(unittest.TestCase):
   default={'version':1,'values':{f['id']:f['initial'] for f in self.schema['fields']}}
   result=render(self.schema,default,(ROOT/'sources/index.html').read_text())
   result=re.sub(r' data-edit-node="n\d+"','',result)
+  result=result.replace('<link rel="stylesheet" href="assets/css/mobile-fixes.css">\n','')
   self.assertEqual(hashlib.sha256(result.encode()).hexdigest(),'aceb08adbd026a07d558c4792b39e86627e9a39384dd4c90aa983b5fa9b039ed')
  def test_original_css_is_identical(self):
   default={'version':1,'values':{f['id']:f['initial'] for f in self.schema['fields']}}

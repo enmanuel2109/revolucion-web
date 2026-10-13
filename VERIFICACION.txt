@@ -1,11 +1,16 @@
-Página HTML: 1
-Imágenes distintas: 9
-Vídeos MP4: 3
-Portadas JPG: 3
-Archivos de fuentes: 9
-Referencias locales verificadas: 28
-Anclas verificadas: 104
-Recursos ausentes: 0
-Descargas fallidas: 0
-Verificación visual en navegador: no realizada.
-Sintaxis JavaScript (node --check): correcta.
+Revisión de la copia y del panel, 14 de octubre de 2026.
+
+Pruebas automáticas: 20 correctas (11 Python y 9 JavaScript).
+Recursos originales: 9 archivos de imagen distintos, 3 vídeos y 3 portadas.
+Integridad de multimedia: hashes comprobados con el inventario de descarga.
+Fuentes: variantes WOFF2 descargadas para reproducir las tipografías del navegador original; los TTF iniciales se conservan como referencia.
+Campos editables: 360.
+HTML inicial: conservado, salvo atributos invisibles de edición y enlace al ajuste CSS para móviles muy estrechos.
+CSS principal: idéntico al de la copia original.
+Comparación de escritorio: dimensiones de 39 encabezados, secciones y elementos coincidentes con la web original tras corregir las fuentes.
+Pruebas en navegador: edición y restauración de un título y precio; cambio y restauración de la cuenta atrás; selección de imagen local y vista previa; recursos de carga diferida.
+Vistas probadas: escritorio, tableta y móvil de 390 y 320 píxeles mediante vista previa de ancho real. No representan todos los navegadores ni dispositivos físicos.
+Las pruebas de contenido y recursos no publicaron datos de prueba en la web pública.
+Errores de guardado probados mediante una API simulada: credenciales no válidas, conflictos previos, cambios simultáneos en la rama, subida interrumpida y cierre de sesión.
+La comprobación de guardado con una clave personal real queda pendiente de que el propietario configure su acceso dentro del panel. No se generó ni almacenó una clave personal.
+GitHub Actions construye y verifica el contenido antes de desplegar.

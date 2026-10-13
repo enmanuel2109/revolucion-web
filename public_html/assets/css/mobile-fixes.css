@@ -1,0 +1,12 @@
+/* Ajustes limitados a móviles muy estrechos; el diseño original se conserva. */
+@media (max-width:360px){
+  .nav .wrap{gap:8px}
+  .nav .brand{min-width:0;flex:1;gap:6px}
+  .nav .logo-rev{width:96px;flex-shrink:0}
+  .nav .brand small{font-size:.8rem}
+  .nav .btn{font-size:.8rem;padding:.65em .8em;flex-shrink:0}
+  .hero .wrap>*,.cal .wrap>*,.exp .wrap>*{min-width:0}
+  .hero h1{font-size:clamp(2rem,10vw,2.25rem)}
+  .hero h1 .ital,.tl .d{overflow-wrap:anywhere}
+  .tl,.facts,.fact{min-width:0}
+}
