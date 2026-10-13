@@ -1,6 +1,6 @@
 Revisión de la copia y del panel, 14 de octubre de 2026.
 
-Pruebas automáticas: 20 correctas (11 Python y 9 JavaScript).
+Pruebas automáticas: 21 correctas (11 Python y 10 JavaScript).
 Recursos originales: 9 archivos de imagen distintos, 3 vídeos y 3 portadas.
 Integridad de multimedia: hashes comprobados con el inventario de descarga.
 Fuentes: variantes WOFF2 descargadas para reproducir las tipografías del navegador original; los TTF iniciales se conservan como referencia.

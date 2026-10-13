@@ -6,6 +6,14 @@ import { GitHubClient, API, safeURL, utf8Base64, decodeBase64, validateContent, 
 const schema = JSON.parse(await readFile(new URL('../public_html/admin/schema.json',import.meta.url),'utf8'));
 const content = JSON.parse(await readFile(new URL('../content/site.json',import.meta.url),'utf8'));
 
+test('Conectar acceso utiliza la URL exacta del repositorio, sin barra final',async()=>{
+ const client=new GitHubClient('TEST_ONLY',async(url,options)=>{
+  assert.equal(url,API);assert.equal(options.headers.Authorization,'Bearer TEST_ONLY');
+  return new Response(JSON.stringify({full_name:'enmanuel2109/revolucion-web'}),{status:200});
+ });
+ const repo=await client.connect();assert.equal(repo.full_name,'enmanuel2109/revolucion-web');
+});
+
 test('El contenido y los acentos conservan su codificación',()=>{
  assert.equal(decodeBase64(utf8Base64('España · ¡R-evolución! 🎉')),'España · ¡R-evolución! 🎉');
  assert.equal(validateContent(schema,content),true);

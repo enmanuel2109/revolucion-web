@@ -1,4 +1,4 @@
-import { API, REPOSITORY, CONTENT_PATH, GitHubClient, validateContent, safeURL, decodeBase64, fileName, miamiTimestamp } from './core.mjs?v=3859e0824587';
+import { API, REPOSITORY, CONTENT_PATH, GitHubClient, validateContent, safeURL, decodeBase64, fileName, miamiTimestamp } from './core.mjs?v=eb1c5becf4e6';
 
 const $ = id => document.getElementById(id);
 const frame = $('preview');

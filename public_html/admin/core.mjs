@@ -62,7 +62,7 @@ export class GitHubClient {
   clear() { this.#token = ''; }
   async request(path, method = 'GET', body) {
     if (!this.#token) throw new Error('Conecta tu acceso a GitHub para publicar.');
-    const response = await this.transport(`${API}/${path}`, {
+    const response = await this.transport(path ? `${API}/${path}` : API, {
       method,
       headers: { 'Accept': 'application/vnd.github+json', 'Authorization': `Bearer ${this.#token}`, 'X-GitHub-Api-Version': '2022-11-28', ...(body ? { 'Content-Type': 'application/json' } : {}) },
       ...(body ? { body: JSON.stringify(body) } : {}),
