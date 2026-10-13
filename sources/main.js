@@ -7,7 +7,7 @@
       window.addEventListener('editor-countdown',function(e){
         if(!e.detail || !Number.isFinite(e.detail.timestamp)) return;
         if(target===e.detail.timestamp) return;
-        target=e.detail.timestamp; previewLabel=e.detail.label;
+        target=e.detail.timestamp; previewLabel=e.detail.label+' (hora de '+e.detail.zoneLabel+')';
         clearTimeout(timer); tick();
       });
     }
@@ -19,7 +19,7 @@
       boxes.forEach(function(b){
         if(diff<=0){
           b.querySelector('.cd-grid').hidden=true;
-          b.querySelector('.cd-note').innerHTML='<strong>¡R-evolución ya comenzó!</strong> Primera clase: 26 de octubre de 2026, 10:00 a. m. (hora de Miami)';
+          if(previewLabel){ b.querySelector('.cd-note').textContent='¡R-evolución ya comenzó! Primera clase: '+previewLabel; } else { b.querySelector('.cd-note').innerHTML='<strong>¡R-evolución ya comenzó!</strong> Primera clase: 26 de octubre de 2026, 10:00 a. m. (hora de Miami)'; }
           return;
         }
         if(b.querySelector('.cd-grid').hidden){ b.querySelector('.cd-note').innerHTML=b.__initialCountdownNote; }

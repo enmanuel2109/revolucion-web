@@ -1,4 +1,4 @@
-import { API, REPOSITORY, CONTENT_PATH, GitHubClient, validateContent, safeURL, decodeBase64, fileName, miamiTimestamp } from './core.mjs?v=3c8bf11b34bb';
+import { API, REPOSITORY, CONTENT_PATH, GitHubClient, validateContent, safeURL, decodeBase64, fileName, zonedTimestamp, TIME_ZONES, timezoneLabel, humanDate, autoCountdownIDs, syncCountdown, migrateContent } from './core.mjs?v=14bc50818ebd';
 
 const $ = id => document.getElementById(id);
 const frame = $('preview');
@@ -31,7 +31,7 @@ async function loadContent() {
   const response = await fetch(`${API}/contents/${CONTENT_PATH}?ref=main`, { cache: 'no-store', headers: { Accept: 'application/vnd.github+json' } });
   if (!response.ok) throw new Error('No pude cargar la última versión de GitHub. Reintenta en unos minutos; puede ser un problema de conexión o el límite de consultas de GitHub.');
   const file = await response.json();
-  const data = JSON.parse(decodeBase64(file.content));
+  const data = migrateContent(schema,JSON.parse(decodeBase64(file.content)));
   validateContent(schema, data);
   content = data; savedContent = structuredClone(data); baseSHA = file.sha;
 }
@@ -47,13 +47,45 @@ function populateGroups() {
 function mediaURL(value) { return objectURLs.get(value) || new URL(value, new URL('../', location.href)).href; }
 function makeLabel(text, id) { const label = document.createElement('label'); label.htmlFor = id; label.textContent = text; return label; }
 
+function calendarCard(field) {
+  const card=document.createElement('div');card.className='field calendar-card';card.id=`card-${field.id}`;
+  const title=document.createElement('h2');title.textContent='Inicio de la cuenta atrás';card.append(title);
+  const grid=document.createElement('div');grid.className='calendar-grid';
+  const [day,hour]=content.values[field.id].split('T');
+  const date=document.createElement('input');date.type='date';date.id='countdown-date';date.value=day;
+  const time=document.createElement('input');time.type='time';time.id='countdown-time';time.step='60';time.value=hour;
+  const zone=document.createElement('select');zone.id='countdown-zone';
+  for(const item of TIME_ZONES){const option=document.createElement('option');option.value=item.id;option.textContent=item.label;zone.append(option);}
+  zone.value=content.countdown?.timeZone||'America/New_York';
+  for(const [label,input] of [['Fecha de inicio',date],['Hora de inicio',time],['Zona horaria',zone]]){
+    const row=document.createElement('div');row.append(makeLabel(label,input.id),input);grid.append(row);
+  }
+  const summary=document.createElement('p');summary.className='calendar-summary';summary.id='calendar-summary';
+  const hint=document.createElement('small');hint.textContent='Estos controles actualizan los dos contadores y la fecha que aparece debajo. Los cambios se publican al guardar.';
+  const update=()=>{
+    if(busy)return;
+    content.values[field.id]=`${date.value}T${time.value}`;content.countdown={timeZone:zone.value};
+    try {syncCountdown(schema,content);summary.textContent=`${humanDate(content.values[field.id])} · ${timezoneLabel(zone.value)}`;summary.classList.remove('error');}
+    catch(error){summary.textContent=error.message;summary.classList.add('error');}
+    applyPreview();setDirty();
+  };
+  try {summary.textContent=`${humanDate(content.values[field.id])} · ${timezoneLabel(zone.value)}`;} catch(error){summary.textContent=error.message;summary.classList.add("error");}
+  date.addEventListener('input',update);time.addEventListener('input',update);zone.addEventListener('change',update);
+  card.append(grid,summary,hint);return card;
+}
+
 function renderFields(focusID) {
   const query = $('search').value.trim().toLocaleLowerCase('es');
   const group = $('group').value;
   const shown = schema.fields.filter(f => (group === '__all' || f.group === group) && (!query || `${f.label} ${f.group} ${content.values[f.id]}`.toLocaleLowerCase('es').includes(query)));
   $('fields').replaceChildren();
+  const automatic=autoCountdownIDs(schema),clock=schema.fields.find(f=>f.type==='datetime');
+  const showClock=['Portada','Calendario','Cuenta atrás','__all'].includes(group) && (!query || /fecha|hora|cuenta|inicio|calendario/i.test(query) || shown.some(f=>automatic.has(f.id)));
+  if(showClock)$('fields').append(calendarCard(clock));
   $('field-count').textContent = `${shown.length} ${shown.length === 1 ? 'campo' : 'campos'} en esta selección`;
   for (const field of shown) {
+    if(field.type==='datetime') {if(!showClock)$('fields').append(calendarCard(field));continue;}
+    if(automatic.has(field.id))continue;
     const card = document.createElement('div'); card.className = 'field'; card.id = `card-${field.id}`;
     const input = document.createElement(field.type === 'multiline' ? 'textarea' : 'input');
     input.id = `input-${field.id}`; input.value = content.values[field.id]; input.dataset.field = field.id;
@@ -82,22 +114,14 @@ function renderFields(focusID) {
     $('fields').append(card);
   }
   if (!shown.length) { const empty = document.createElement('p'); empty.className = 'empty'; empty.textContent = 'No encontré campos con esa búsqueda.'; $('fields').append(empty); }
-  if (focusID) { const input = $(`input-${focusID}`); if (input) { input.focus({ preventScroll: true }); $(`card-${focusID}`).scrollIntoView({ block: 'nearest' }); } }
-}
-
-function humanDate(value) {
-  const [day, time] = value.split('T');
-  const d = new Date(`${day}T12:00:00Z`);
-  const date = new Intl.DateTimeFormat('es', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(d);
-  const [hours, minutes] = time.split(':').map(Number);
-  return `${date} · ${hours % 12 || 12}:${String(minutes).padStart(2, '0')} ${hours >= 12 ? 'p. m.' : 'a. m.'}`;
+  if (focusID) { const input = $(`input-${focusID}`) || $('countdown-date'); if (input) { input.focus({ preventScroll: true }); input.closest('.field').scrollIntoView({ block: 'nearest' }); } }
 }
 
 function editField(field, value) {
   if (busy) return;
   content.values[field.id] = value;
   if (field.type === 'datetime' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(value) && !Number.isNaN(Date.parse(value))) {
-    for (const id of field.related || []) content.values[id] = humanDate(value);
+    syncCountdown(schema,content);
   }
   const thumb = document.querySelector(`[data-thumbnail="${field.id}"]`);
   if (thumb && safeURL(value, true)) thumb.src = mediaURL(value);
@@ -133,7 +157,7 @@ function applyPreview() {
   const countdown = schema.fields.find(field => field.target.countdown);
   if (countdown) {
     const value = content.values[countdown.id];
-    try { frame.contentWindow.dispatchEvent(new CustomEvent('editor-countdown', { detail: { timestamp: miamiTimestamp(value), label: humanDate(value) } })); } catch {}
+    try { frame.contentWindow.dispatchEvent(new CustomEvent('editor-countdown', { detail: { timestamp: zonedTimestamp(value,content.countdown?.timeZone||'America/New_York'), label: humanDate(value),zoneLabel:timezoneLabel(content.countdown?.timeZone||'America/New_York') } })); } catch {}
   }
   for (const field of schema.fields) {
     const value = content.values[field.id]; const target = field.target;
@@ -174,7 +198,7 @@ function selectFromPreview(event) {
     const node = el.dataset.editNode;
     const matches = schema.fields.filter(f => f.target.node === node);
     const field = matches.find(f => f.type === 'image' || f.type === 'video') || matches.find(f => f.target.textIndex !== undefined) || matches[0];
-    if (field) { $('group').value = field.group; $('search').value = ''; renderFields(field.id); return; }
+    if (field) { const isClock=autoCountdownIDs(schema).has(field.id);$('group').value = isClock?'Cuenta atrás':field.group; $('search').value = ''; renderFields(isClock?schema.fields.find(f=>f.type==='datetime').id:field.id); return; }
     el = el.parentElement?.closest('[data-edit-node]');
   }
 }
@@ -186,9 +210,34 @@ function onFrameLoad() {
 }
 
 function downloadDraft() {
-  const data = { repository: REPOSITORY, savedAt: new Date().toISOString(), content, uploads: [...uploads.values()].map(({ path, base64, bytes, field }) => ({ path, base64, bytes, field })) };
+  const data = { repository: REPOSITORY, savedAt: new Date().toISOString(), baseSHA, content, uploads: [...uploads.values()].map(({ path, base64, bytes, field }) => ({ path, base64, bytes, field })) };
   const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
   const link = document.createElement('a'); link.href = url; link.download = 'borrador-revolucion.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+async function importDraft(input) {
+  const file=input.files?.[0];if(!file||busy)return;
+  try {
+    if(file.size>45*1024*1024)throw new Error('El borrador supera el tamaño máximo de 45 MB.');
+    const draft=JSON.parse(await file.text());
+    if(draft.repository!==REPOSITORY)throw new Error('Este borrador pertenece a otra web.');
+    const restored=migrateContent(schema,draft.content);const pending=[];let total=0;
+    for(const item of draft.uploads||[]){
+      const field=fieldsByID.get(item.field);
+      if(!field||!['image','video'].includes(field.type)||!/^assets\/uploads\/[a-zA-Z0-9._-]+$/.test(item.path)||typeof item.base64!=='string'||!/^[-A-Za-z0-9+/=]+$/.test(item.base64))throw new Error('El borrador contiene un archivo no válido.');
+      const binary=atob(item.base64);total+=binary.length;
+      if(total>30*1024*1024||binary.length>(field.type==='image'?10:20)*1024*1024)throw new Error('Los archivos del borrador superan el tamaño admitido.');
+      const ext=item.path.split('.').pop().toLowerCase();const type=({jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',webp:'image/webp',gif:'image/gif',mp4:'video/mp4',webm:'video/webm'})[ext];
+      if(!type||!type.startsWith(field.type==='image'?'image/':'video/'))throw new Error('Formato de archivo no admitido en el borrador.');
+      const bytes=Uint8Array.from(binary,c=>c.charCodeAt(0));pending.push({...item,bytes:bytes.length,blob:new Blob([bytes],{type})});
+    }
+    if(dirty&&!confirm('Importar este borrador sustituirá los cambios de este panel. ¿Quieres continuar?'))return;
+    for(const url of objectURLs.values())URL.revokeObjectURL(url);objectURLs.clear();uploads.clear();
+    content=restored;
+    for(const {blob,...item} of pending){uploads.set(item.path,item);objectURLs.set(item.path,URL.createObjectURL(blob));}
+    renderFields();applyPreview();setDirty();message('Borrador importado. Tus cambios están en la vista previa; todavía no se han publicado.');
+  } catch(error){message('No pude importar el borrador. '+error.message,true);}
+  finally {input.value='';}
 }
 
 async function connectAccess() {
@@ -237,7 +286,7 @@ async function publish() {
     try { sessionStorage.removeItem(DRAFT_KEY); } catch {}
     message('Guardado en GitHub. Publicando la web; normalmente tarda uno o dos minutos…');
     void awaitDeployment(snapshot, result.commit);
-  } catch (error) { message(error.message, true); }
+  } catch (error) { if(error.status===403){client?.clear();client=null;$('connection').textContent='Permiso de escritura pendiente';$('access').textContent='Conectar acceso';$('disconnect').hidden=true;}message(error.message, true); }
   finally { busy = false; $('fields').inert = false; buttons(); }
 }
 
@@ -255,6 +304,7 @@ $('group').addEventListener('change', () => renderFields());
 $('search').addEventListener('input', () => { if ($('search').value) $('group').value = '__all'; renderFields(); });
 $('publish').addEventListener('click', publish);
 $('download').addEventListener('click', downloadDraft);
+$('import-draft').addEventListener('change',()=>importDraft($('import-draft')));
 $('reload').addEventListener('click', reloadContent);
 $('access').addEventListener('click', () => { $('access-error').textContent = ''; $('access-dialog').showModal(); });
 $('close-access').addEventListener('click', () => { $('token').value = ''; $('access-dialog').close(); });
@@ -262,7 +312,7 @@ $('access-dialog').addEventListener('close', () => { $('token').value = ''; });
 $('connect').addEventListener('click', connectAccess);
 $('token').addEventListener('keydown', event => { if (event.key === 'Enter') { event.preventDefault(); void connectAccess(); } });
 $('disconnect').addEventListener('click', () => { client?.clear(); client = null; $('connection').textContent = 'Sin conexión para publicar'; $('access').textContent = 'Conectar acceso'; $('disconnect').hidden = true; $('access-dialog').close(); message('Sesión cerrada. Tu borrador sigue en el panel.'); });
-$('restore-draft').addEventListener('click', () => { const outdated = draftCandidate.baseSHA !== baseSHA; content = draftCandidate.content; if (outdated) baseSHA = draftCandidate.baseSHA; $('draft-dialog').close(); renderFields(); applyPreview(); setDirty(); if (outdated) message('Borrador recuperado, pero GitHub tiene cambios más recientes. La publicación se bloqueará para evitar sobrescribirlos. Descarga el borrador y recarga el contenido para revisarlos.', true); });
+$('restore-draft').addEventListener('click', () => { const outdated = draftCandidate.baseSHA !== baseSHA; content = migrateContent(schema,draftCandidate.content); if (outdated) baseSHA = draftCandidate.baseSHA; $('draft-dialog').close(); renderFields(); applyPreview(); setDirty(); if (outdated) message('Borrador recuperado, pero GitHub tiene cambios más recientes. La publicación se bloqueará para evitar sobrescribirlos. Descarga el borrador y recarga el contenido para revisarlos.', true); });
 $('discard-draft').addEventListener('click', () => { try { sessionStorage.removeItem(DRAFT_KEY); } catch {} $('draft-dialog').close(); message('Última versión de GitHub cargada.'); });
 for (const button of document.querySelectorAll('[data-width]')) button.addEventListener('click', () => {
   for (const b of document.querySelectorAll('[data-width]')) b.setAttribute('aria-pressed', String(b === button));

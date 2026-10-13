@@ -1,6 +1,6 @@
 Revisión de la copia y del panel, 14 de octubre de 2026.
 
-Pruebas automáticas: 22 correctas (11 Python y 11 JavaScript).
+Pruebas automáticas: 30 correctas (14 Python y 16 JavaScript).
 Regresión de conexión: fetch conserva el contexto global requerido por el navegador.
 Recursos originales: 9 archivos de imagen distintos, 3 vídeos y 3 portadas.
 Integridad de multimedia: hashes comprobados con el inventario de descarga.
@@ -15,3 +15,6 @@ Las pruebas de contenido y recursos no publicaron datos de prueba en la web púb
 Errores de guardado probados mediante una API simulada: credenciales no válidas, conflictos previos, cambios simultáneos en la rama, subida interrumpida y cierre de sesión.
 La comprobación de guardado con una clave personal real queda pendiente de que el propietario configure su acceso dentro del panel. No se generó ni almacenó una clave personal.
 GitHub Actions construye y verifica el contenido antes de desplegar.
+
+Calendario: fecha y hora nativas, zonas horarias, sincronización de ambas fechas y contadores, migración de borradores antiguos.
+Acceso: pruebas de token de solo lectura, comprobación de escritura y límite de peticiones.

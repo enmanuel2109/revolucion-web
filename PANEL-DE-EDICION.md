@@ -38,7 +38,7 @@ Sin conectar acceso puedes editar y comprobar la vista previa, pero no publicar.
 
 Los borradores de texto se conservan en sessionStorage dentro de la sesión del navegador. Los archivos pendientes no se guardan automáticamente allí, para evitar límites de tamaño: antes de cerrar con archivos pendientes, publica o descarga el borrador completo.
 
-Descargar borrador produce un respaldo JSON con contenido y archivos pendientes, sin la clave. Su recuperación manual está destinada al propietario o a quien mantenga la web; el panel no importa ese respaldo automáticamente.
+Descargar borrador produce un respaldo JSON con contenido y archivos pendientes, sin la clave. Puedes recuperarlo con Importar borrador. La importación restaura los cambios y archivos en la vista previa; después debes revisar y publicar. Los borradores antiguos recuperan la fecha escrita y la zona horaria cuando sea posible.
 
 Si otra persona cambia el contenido mientras editas, la publicación se bloquea antes de actualizar la rama. Descarga tu borrador, recarga la última versión y revisa qué cambios necesitas volver a aplicar. El panel nunca fuerza la rama ni ignora conflictos.
 
@@ -57,3 +57,9 @@ El editor cambia contenido dentro del diseño existente. No es un constructor pa
 `node --test tests/editor.test.mjs` verifica validación, fechas y operaciones de guardado con una API simulada, sin publicar contenido de prueba.
 
 GitHub Actions ejecuta estas comprobaciones antes de publicar. Las pruebas de la API simulada no sustituyen la comprobación de acceso con tu propia clave; esa comprobación se realiza cuando la conectas en el panel y publicas.
+
+## Calendario y permisos de publicación
+
+En Portada, Calendario o Cuenta atrás, usa Fecha de inicio, Hora de inicio y Zona horaria. El calendario actualiza ambos contadores y ambas fechas visibles. Selecciona Santiago si el horario corresponde a Chile. Las horas inexistentes durante un cambio de horario se rechazan.
+
+Conectar acceso comprueba Contents: Read and write creando un blob vacío sin modificar archivos ni publicar. Un error 403 distingue permisos insuficientes del límite de peticiones. Comprueba propietario enmanuel2109, repositorio revolucion-web seleccionado, permiso Contents: Read and write y que la clave no haya caducado.

@@ -16,21 +16,31 @@ def valid_url(value,media=False):
  return bool(value) and not value.startswith('//') and '..' not in p.path.split('/')
 
 def render(schema,content,source):
- values=content['values'];specs={f['id']:f for f in schema['fields']}
+ values=dict(content['values']);specs={f['id']:f for f in schema['fields']}
  if content.get('version')!=1 or set(values)!=set(specs):raise ValueError('La estructura de contenido no coincide con el editor.')
+ zone=content.get('countdown',{}).get('timeZone','America/New_York')
+ labels={'America/New_York':'Miami','America/Santiago':'Santiago','America/Lima':'Lima','Europe/Madrid':'Madrid','UTC':'UTC'}
+ if zone not in labels:raise ValueError('Zona horaria no admitida.')
+ countdown=next(f for f in schema['fields'] if f['type']=='datetime')
+ chosen=datetime.strptime(values[countdown['id']],'%Y-%m-%dT%H:%M')
+ months=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+ date_label=f'{chosen.day} de {months[chosen.month-1]} de {chosen.year} · {chosen.hour%12 or 12}:{chosen.minute:02d} '+('p. m.' if chosen.hour>=12 else 'a. m.')
+ for fid in countdown.get('related',[]):values[fid]=date_label
+ for field in schema['fields']:
+  if field['initial']=='(hora de Miami)':values[field['id']]=f'(hora de {labels[zone]})'
  for fid,value in values.items():
   f=specs[fid]
   if not isinstance(value,str) or len(value)>12000:raise ValueError('Texto no válido: '+fid)
   if f['type'] in ['link','image','video'] and not valid_url(value,f['type']!='link'):raise ValueError('Enlace no válido: '+fid)
   if f['type']=='datetime':
-   dt=datetime.strptime(value,'%Y-%m-%dT%H:%M').replace(tzinfo=ZoneInfo('America/New_York'))
-   if dt.astimezone(timezone.utc).astimezone(ZoneInfo('America/New_York')).strftime('%Y-%m-%dT%H:%M')!=value:raise ValueError('Hora inexistente por el cambio de horario de Miami.')
+   dt=datetime.strptime(value,'%Y-%m-%dT%H:%M').replace(tzinfo=ZoneInfo(zone))
+   if dt.astimezone(timezone.utc).astimezone(ZoneInfo(zone)).strftime('%Y-%m-%dT%H:%M')!=value:raise ValueError('Hora inexistente por el cambio de horario.')
  def replace(m):
   fid=m.group(1);f=specs[fid];value=values[fid]
-  if value==f['initial']:return f['original']
+  if value==f['initial'] and not (f['encoding']=='datetime' and zone!='America/New_York'):return f['original']
   encoding=f['encoding']
   if encoding=='datetime':
-   dt=datetime.strptime(value,'%Y-%m-%dT%H:%M').replace(tzinfo=ZoneInfo('America/New_York')).astimezone(timezone.utc)
+   dt=datetime.strptime(value,'%Y-%m-%dT%H:%M').replace(tzinfo=ZoneInfo(zone)).astimezone(timezone.utc)
    return 'Date.parse('+json.dumps(dt.isoformat())+')'
   if encoding=='css':
    path=value if urlsplit(value).scheme else posixpath.relpath(value,'assets/css')
@@ -40,10 +50,10 @@ def render(schema,content,source):
  result=re.sub(r'\{\{cms:(f\d+)\}\}',replace,source)
  countdown=next(f for f in schema['fields'] if f['type']=='datetime')
  value=values[countdown['id']]
- if value!=countdown['initial']:
+ if value!=countdown['initial'] or zone!='America/New_York':
   dt=datetime.strptime(value,'%Y-%m-%dT%H:%M')
   months=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
-  human=f'{dt.day} de {months[dt.month-1]} de {dt.year}, {dt.hour%12 or 12}:{dt.minute:02d} '+('p. m.' if dt.hour>=12 else 'a. m.')+' (hora de Miami)'
+  human=f'{dt.day} de {months[dt.month-1]} de {dt.year}, {dt.hour%12 or 12}:{dt.minute:02d} '+('p. m.' if dt.hour>=12 else 'a. m.')+f' (hora de {labels[zone]})'
   result=result.replace('26 de octubre de 2026, 10:00 a. m. (hora de Miami)',human)
  return result
 

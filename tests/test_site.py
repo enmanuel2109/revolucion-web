@@ -89,5 +89,15 @@ class SiteTests(unittest.TestCase):
   for item in inventory['assets']:
    if item['path'].endswith('fonts.css'):continue
    file=ROOT/item['path'];self.assertEqual(hashlib.sha256(file.read_bytes()).hexdigest(),item['sha256'],item['path'])
+ def test_santiago_calendar_changes_timestamp_and_both_notes(self):
+  data=copy.deepcopy(self.content);clock=next(f for f in self.schema['fields'] if f['type']=='datetime');data['values'][clock['id']]='2026-10-19T10:00';data['countdown']={'timeZone':'America/Santiago'}
+  js=render(self.schema,data,(ROOT/'sources/main.js').read_text());page=render(self.schema,data,(ROOT/'sources/index.html').read_text())
+  self.assertIn('2026-10-19T13:00:00+00:00',js);self.assertEqual(page.count('19 de octubre de 2026 · 10:00 a. m.'),2);self.assertEqual(page.count('(hora de Santiago)'),2)
+ def test_changing_only_timezone_recomputes_default_timestamp(self):
+  data=copy.deepcopy(self.content);data['countdown']={'timeZone':'America/Santiago'}
+  self.assertIn('2026-10-26T13:00:00+00:00',render(self.schema,data,(ROOT/'sources/main.js').read_text()))
+ def test_unknown_timezone_is_rejected(self):
+  data=copy.deepcopy(self.content);data['countdown']={'timeZone':'Zona/Inventada'}
+  with self.assertRaises(ValueError):render(self.schema,data,'')
 
 if __name__=='__main__':unittest.main()

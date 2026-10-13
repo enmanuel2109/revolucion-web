@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { GitHubClient, API, safeURL, utf8Base64, decodeBase64, validateContent, miamiTimestamp, fileName } from '../public_html/admin/core.mjs';
+import { GitHubClient, API, safeURL, utf8Base64, decodeBase64, validateContent, miamiTimestamp, fileName, zonedTimestamp, migrateContent, syncCountdown, humanDate } from '../public_html/admin/core.mjs';
 
 const schema = JSON.parse(await readFile(new URL('../public_html/admin/schema.json',import.meta.url),'utf8'));
 const content = JSON.parse(await readFile(new URL('../content/site.json',import.meta.url),'utf8'));
@@ -11,19 +11,47 @@ test('El fetch nativo conserva el contexto del navegador al conectar',async()=>{
  let calls=0;
  globalThis.fetch=async function(url,options){
   assert.equal(this,globalThis,'fetch necesita el contexto global del navegador');
-  assert.equal(url,API);assert.equal(options.headers.Authorization,'Bearer TEST_ONLY');calls++;
+  assert.ok([API,API+'/git/blobs'].includes(url));assert.equal(options.headers.Authorization,'Bearer TEST_ONLY');calls++;
+  if(url.endsWith('/git/blobs')){assert.equal(options.method,'POST');assert.deepEqual(JSON.parse(options.body),{content:'',encoding:'utf-8'});return new Response(JSON.stringify({sha:'empty-blob'}),{status:201});}
   return new Response(JSON.stringify({full_name:'enmanuel2109/revolucion-web'}),{status:200});
  };
- try { const client=new GitHubClient('TEST_ONLY');await client.connect();assert.equal(calls,1); }
+ try { const client=new GitHubClient('TEST_ONLY');await client.connect();assert.equal(calls,2); }
  finally {globalThis.fetch=original;}
 });
 
 test('Conectar acceso utiliza la URL exacta del repositorio, sin barra final',async()=>{
  const client=new GitHubClient('TEST_ONLY',async(url,options)=>{
-  assert.equal(url,API);assert.equal(options.headers.Authorization,'Bearer TEST_ONLY');
+  assert.ok([API,API+'/git/blobs'].includes(url));assert.equal(options.headers.Authorization,'Bearer TEST_ONLY');
   return new Response(JSON.stringify({full_name:'enmanuel2109/revolucion-web'}),{status:200});
  });
  const repo=await client.connect();assert.equal(repo.full_name,'enmanuel2109/revolucion-web');
+});
+
+test('Conectar rechaza una clave que solo puede leer y conserva el motivo de GitHub',async()=>{
+ const client=new GitHubClient('TEST_ONLY',async url=>url===API?new Response(JSON.stringify({full_name:'enmanuel2109/revolucion-web'}),{status:200}):new Response(JSON.stringify({message:'Resource not accessible by personal access token'}),{status:403}));
+ await assert.rejects(client.connect(),/Contents: Read and write.*Resource not accessible/);
+});
+test('Los límites de consultas se diferencian de los permisos de escritura',async()=>{
+ const client=new GitHubClient('TEST_ONLY',async()=>new Response(JSON.stringify({message:'API rate limit exceeded'}),{status:403,headers:{'x-ratelimit-remaining':'0'}}));
+ await assert.rejects(client.connect(),/agotado el límite/);
+});
+test('El calendario interpreta la hora de Santiago y otras zonas',()=>{
+ assert.equal(new Date(zonedTimestamp('2026-10-19T10:00','America/Santiago')).toISOString(),'2026-10-19T13:00:00.000Z');
+ assert.equal(new Date(zonedTimestamp('2026-10-19T10:00','America/Lima')).toISOString(),'2026-10-19T15:00:00.000Z');
+ assert.throws(()=>zonedTimestamp('2026-10-19T10:00','Zona/Inventada'));
+});
+test('Un borrador antiguo recupera la fecha escrita y la zona sin perder otros cambios',()=>{
+ const draft=structuredClone(content),clock=schema.fields.find(f=>f.type==='datetime');
+ for(const id of clock.related)draft.values[id]='19 de octubre de 2026 · 10:00 a. m.';
+ for(const f of schema.fields.filter(f=>f.initial==='(hora de Miami)'))draft.values[f.id]='(hora de Santiago)';
+ const title=schema.fields.find(f=>f.initial==='Professional Party Designer'&&f.type==='text');draft.values[title.id]='Decorador de kiarita';
+ const migrated=migrateContent(schema,draft);
+ assert.equal(migrated.values[clock.id],'2026-10-19T10:00');assert.equal(migrated.countdown.timeZone,'America/Santiago');assert.equal(migrated.values[title.id],'Decorador de kiarita');
+});
+test('Cambiar el calendario sincroniza ambas fechas y ambas etiquetas',()=>{
+ const data=structuredClone(content),clock=schema.fields.find(f=>f.type==='datetime');data.values[clock.id]='2026-10-19T16:30';data.countdown={timeZone:'America/Santiago'};syncCountdown(schema,data);
+ for(const id of clock.related)assert.equal(data.values[id],humanDate('2026-10-19T16:30'));
+ for(const f of schema.fields.filter(f=>f.initial==='(hora de Miami)'))assert.equal(data.values[f.id],'(hora de Santiago)');
 });
 
 test('El contenido y los acentos conservan su codificación',()=>{
