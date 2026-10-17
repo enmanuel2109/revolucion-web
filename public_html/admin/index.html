@@ -12,7 +12,7 @@
 <body>
   <header class="toolbar">
     <div class="identity"><span class="badge" aria-hidden="true">R</span><div><h1>Tu web, a tu manera</h1><p>Panel de edición · R-evolución</p></div></div>
-    <div class="toolbar-actions"><a href="../" target="_blank" rel="noopener">Ver web ↗</a><button id="access" class="secondary">Conectar acceso</button><button id="publish" class="primary" disabled>Publicar cambios</button></div>
+    <div class="toolbar-actions"><button id="open-countdown" class="secondary">Fecha y cuenta atrás</button><a href="../" target="_blank" rel="noopener">Ver web ↗</a><button id="access" class="secondary">Conectar acceso</button><button id="publish" class="primary" disabled>Publicar cambios</button></div>
   </header>
   <div class="message-strip"><p id="status" role="status" aria-live="polite">Cargando contenido…</p><span id="connection">Sin conexión para publicar</span></div>
   <main class="workspace">
@@ -20,7 +20,7 @@
       <div class="controls"><label for="group">¿Qué quieres cambiar?</label><select id="group"></select><label class="sr-only" for="search">Buscar contenido</label><input id="search" type="search" placeholder="Buscar texto, precio o enlace…"><div class="helper">Los cambios aparecen en la vista previa. La web pública cambia al publicar.</div></div>
       <div id="fields" aria-live="off"></div>
       <div class="draft-actions"><button id="download" class="secondary" disabled>Descargar borrador</button><label class="import-button" for="import-draft">Importar borrador</label><input class="sr-only" id="import-draft" type="file" accept="application/json,.json"><button id="reload" class="text-button">Recargar contenido</button></div>
-      <details class="instructions"><summary>Cómo utilizar el panel</summary><ol><li>Selecciona una sección o busca el texto que quieres cambiar.</li><li>Edita el campo o sube una imagen o vídeo.</li><li>Revisa la vista previa en escritorio y móvil.</li><li>Conecta tu acceso y pulsa <strong>Publicar cambios</strong>.</li></ol><p>Los textos divididos en distintos estilos tienen campos separados. Las fechas escritas en el calendario se editan como texto; la cuenta atrás tiene su propio apartado.</p><p>Las imágenes nuevas conservan el espacio de la imagen sustituida. Puedes guardar con seguridad sin modificar la estructura de la página.</p></details>
+      <details class="instructions"><summary>Cómo utilizar el panel</summary><ol><li>Selecciona una sección o busca el texto que quieres cambiar.</li><li>Edita el campo o sube una imagen o vídeo.</li><li>Revisa la vista previa en escritorio y móvil.</li><li>Conecta tu acceso y pulsa <strong>Publicar cambios</strong>.</li></ol><p>Los textos divididos en distintos estilos tienen campos separados. Usa Fecha y cuenta atrás para elegir el día, la hora y la zona horaria del inicio. Ambos contadores y sus fechas se actualizan juntos.</p><p>Las imágenes nuevas conservan el espacio de la imagen sustituida. Puedes guardar con seguridad sin modificar la estructura de la página.</p></details>
     </aside>
     <section class="preview" aria-label="Vista previa">
       <div class="preview-tools"><div><strong>Vista previa</strong><span id="field-count"></span></div><div class="devices" role="group" aria-label="Tamaño de vista previa"><button data-width="1280" aria-pressed="true">Escritorio</button><button data-width="768" aria-pressed="false">Tableta</button><button data-width="390" aria-pressed="false">Móvil</button><button data-width="320" aria-pressed="false">Móvil pequeño</button></div></div>
@@ -37,6 +37,6 @@
     <details><summary>Crear mi acceso por primera vez</summary><ol><li>Abre <a href="https://github.com/settings/personal-access-tokens/new?name=Editor+Revolucion&target_name=enmanuel2109&expires_in=90&contents=write" target="_blank" rel="noopener noreferrer">Crear clave en GitHub ↗</a>.</li><li>En <strong>Resource owner</strong>, selecciona <strong>enmanuel2109</strong>.</li><li>Selecciona <strong>Only select repositories</strong> y marca <strong>revolucion-web</strong>.</li><li>En permisos del repositorio, concede únicamente <strong>Contents → Read and write</strong>.</li><li>Genera la clave, cópiala y pégala en este panel.</li></ol><p>Para que otra persona publique con su propia cuenta, el propietario debe añadirla como colaboradora del repositorio. Cada editor utiliza su propio acceso; no hace falta compartir la contraseña de GitHub.</p><p>Guarda tu clave en tu gestor de contraseñas. El panel no la guarda en el navegador ni en la web. No la envíes por chat ni la pegues en un campo de contenido.</p></details>
   </dialog>
   <dialog id="draft-dialog" aria-labelledby="draft-title"><h2 id="draft-title">Hay un borrador de esta sesión</h2><p>Encontré cambios sin publicar. Puedes recuperarlos o comenzar con la última versión de GitHub.</p><button id="restore-draft" class="primary">Recuperar borrador</button><button id="discard-draft" class="secondary">Usar versión de GitHub</button></dialog>
-  <script type="module" src="editor.mjs?v=ae2102cfa48f"></script>
+  <script type="module" src="editor.mjs?v=3947fcc60415"></script>
 </body>
 </html>

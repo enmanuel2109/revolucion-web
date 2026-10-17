@@ -29,7 +29,8 @@ class SiteTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.schema=json.loads((ROOT/'public_html/admin/schema.json').read_text())
-  cls.content=json.loads((ROOT/'content/site.json').read_text())
+  cls.live_content=json.loads((ROOT/'content/site.json').read_text())
+  cls.content={'version':1,'values':{f['id']:f['initial'] for f in cls.schema['fields']}}
  def test_original_html_is_unchanged_except_editor_attributes(self):
   default={'version':1,'values':{f['id']:f['initial'] for f in self.schema['fields']}}
   result=render(self.schema,default,(ROOT/'sources/index.html').read_text())
@@ -41,9 +42,9 @@ class SiteTests(unittest.TestCase):
   css=render(self.schema,default,(ROOT/'sources/styles.css').read_text())
   self.assertEqual(hashlib.sha256(css.encode()).hexdigest(),'87bbca27e8ffdc1f41c3d2604987334bfa05fda8f350eb86316bd9dbda84b8f5')
  def test_every_editable_target_matches_its_content(self):
-  html=render(self.schema,self.content,(ROOT/'sources/index.html').read_text());p=Parser();p.feed(html)
+  html=render(self.schema,self.live_content,(ROOT/'sources/index.html').read_text());p=Parser();p.feed(html)
   for f in self.schema['fields']:
-   t=f['target'];value=self.content['values'][f['id']]
+   t=f['target'];value=self.live_content['values'][f['id']]
    if t.get('node'):
     self.assertIn(t['node'],p.nodes,f['id']);node=p.nodes[t['node']]
     if 'textIndex' in t:self.assertEqual(node['texts'][t['textIndex']].strip(),value,f['id'])

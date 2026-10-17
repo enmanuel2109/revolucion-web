@@ -18,3 +18,5 @@ GitHub Actions construye y verifica el contenido antes de desplegar.
 
 Calendario: fecha y hora nativas, zonas horarias, sincronización de ambas fechas y contadores, migración de borradores antiguos.
 Acceso: pruebas de token de solo lectura, comprobación de escritura y límite de peticiones.
+
+17 de octubre de 2026: corregidas las pruebas que dependían del contenido editable. 31 pruebas correctas con el contenido personalizado real (14 Python y 17 JavaScript). Acceso directo Fecha y cuenta atrás en la barra superior y aviso con enlace si falla el despliegue.

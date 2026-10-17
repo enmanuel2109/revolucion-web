@@ -16,6 +16,7 @@ function buttons() {
   $('download').disabled = !content;
   $('reload').disabled = busy;
   $('connect').disabled = busy;
+  $('open-countdown').disabled = busy || !content;
 }
 function setDirty() {
   dirty = JSON.stringify(content) !== JSON.stringify(savedContent) || uploads.size > 0;
@@ -265,6 +266,15 @@ async function awaitDeployment(snapshot, commit) {
         frame.src = `../index.html?editor-preview=1&v=${commit}`;
         return;
       }
+      const runResponse=await fetch(`https://api.github.com/repos/${REPOSITORY}/actions/runs?head_sha=${encodeURIComponent(commit)}&per_page=5`,{cache:'no-store',headers:{Accept:'application/vnd.github+json'}});
+      if(runResponse.ok){
+        const runs=await runResponse.json();
+        const run=runs.workflow_runs?.find(r=>r.head_sha===commit&&r.name==='Publicar web en GitHub Pages');
+        if(run?.status==='completed'&&run.conclusion!=='success'){
+          message('Tus cambios están guardados en GitHub, pero falló la publicación de la web. No necesitas volver a escribirlos. Revisa el detalle de publicación en GitHub.',true);
+          const link=document.createElement('a');link.href=`https://github.com/${REPOSITORY}/actions/runs/${run.id}`;link.target='_blank';link.rel='noopener noreferrer';link.textContent=' Ver error de publicación ↗';$('status').append(link);return;
+        }
+      }
     } catch { /* Esperar a la siguiente comprobación de la publicación. */ }
     await new Promise(resolve => setTimeout(resolve, 7000));
   }
@@ -304,6 +314,7 @@ $('group').addEventListener('change', () => renderFields());
 $('search').addEventListener('input', () => { if ($('search').value) $('group').value = '__all'; renderFields(); });
 $('publish').addEventListener('click', publish);
 $('download').addEventListener('click', downloadDraft);
+$('open-countdown').addEventListener('click',()=>{if(!content||busy)return;$('group').value='Cuenta atrás';$('search').value='';renderFields();$('countdown-date').scrollIntoView({block:'center',behavior:'smooth'});$('countdown-date').focus({preventScroll:true});});
 $('import-draft').addEventListener('change',()=>importDraft($('import-draft')));
 $('reload').addEventListener('click', reloadContent);
 $('access').addEventListener('click', () => { $('access-error').textContent = ''; $('access-dialog').showModal(); });

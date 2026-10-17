@@ -4,7 +4,9 @@ import { readFile } from 'node:fs/promises';
 import { GitHubClient, API, safeURL, utf8Base64, decodeBase64, validateContent, miamiTimestamp, fileName, zonedTimestamp, migrateContent, syncCountdown, humanDate } from '../public_html/admin/core.mjs';
 
 const schema = JSON.parse(await readFile(new URL('../public_html/admin/schema.json',import.meta.url),'utf8'));
-const content = JSON.parse(await readFile(new URL('../content/site.json',import.meta.url),'utf8'));
+const liveContent = JSON.parse(await readFile(new URL('../content/site.json',import.meta.url),'utf8'));
+const content = {version:1,values:Object.fromEntries(schema.fields.map(f=>[f.id,f.initial]))};
+test('El contenido personalizado guardado sigue siendo válido',()=>{assert.equal(validateContent(schema,liveContent),true);});
 
 test('El fetch nativo conserva el contexto del navegador al conectar',async()=>{
  const original=globalThis.fetch;
