@@ -38,7 +38,7 @@
     "f0035": "Minutos",
     "f0036": "Segundos",
     "f0037": "Primera clase:",
-    "f0038": "31 de octubre de 2026 · 12:00 p. m.",
+    "f0038": "31 de octubre de 2026 · 4:30 p. m.",
     "f0039": "(hora de Santiago)",
     "f0040": "#inversion",
     "f0041": "Matricúlate",
@@ -202,7 +202,7 @@
     "f0199": "Minutos",
     "f0200": "Segundos",
     "f0201": "Primera clase:",
-    "f0202": "31 de octubre de 2026 · 12:00 p. m.",
+    "f0202": "31 de octubre de 2026 · 4:30 p. m.",
     "f0203": "(hora de Santiago)",
     "f0204": "Clases online por Zoom",
     "f0205": "26 de octubre 2026 hasta el 02 de febrero 2027",
@@ -360,7 +360,7 @@
     "f0357": "Organizador Oficial Estados Unidos · 1ra Generación Estados Unidos · 7ma Generación R-evolución",
     "f0358": "assets/images/imagen-01.jpg",
     "f0359": "assets/images/imagen-02.png",
-    "f0360": "2026-10-31T12:00"
+    "f0360": "2026-10-31T16:30"
   },
   "countdown": {
     "timeZone": "America/Santiago"
