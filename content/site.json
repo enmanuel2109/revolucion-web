@@ -21,12 +21,12 @@
     "f0018": "#inversion",
     "f0019": "Matricúlate",
     "f0020": "Certifícate como",
-    "f0021": "Professional Party Designer",
-    "f0022": "con R-evolución",
-    "f0023": "Galedo Party Designers",
-    "f0024": "y",
-    "f0025": "R-evolución",
-    "f0026": "se unen para traer a Estados Unidos la certificación de",
+    "f0021": "Profesional de Decoración",
+    "f0022": "con Kiarita Producciones",
+    "f0023": "Carlos",
+    "f0024": "e",
+    "f0025": "Ingrid",
+    "f0026": "se unen para traer a Chile la certificación de",
     "f0027": "Professional Party Designer",
     "f0028": ".",
     "f0029": "ORLANDO, FL.",
@@ -361,5 +361,8 @@
     "f0358": "assets/images/imagen-01.jpg",
     "f0359": "assets/images/imagen-02.png",
     "f0360": "2026-10-26T10:00"
+  },
+  "countdown": {
+    "timeZone": "America/New_York"
   }
 }
