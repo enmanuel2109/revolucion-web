@@ -29,17 +29,17 @@
     "f0026": "se unen para traer a Chile la certificación de",
     "f0027": "Professional Party Designer",
     "f0028": ".",
-    "f0029": "ORLANDO, FL.",
+    "f0029": "SANTIAGO, CL",
     "f0030": "2026 – 2027",
-    "f0031": "1ra Generación Estados Unidos",
+    "f0031": "1ra Generación Chile",
     "f0032": "7ma Generación R-evolución",
     "f0033": "Días",
     "f0034": "Horas",
     "f0035": "Minutos",
     "f0036": "Segundos",
     "f0037": "Primera clase:",
-    "f0038": "26 de octubre de 2026 · 10:00 a. m.",
-    "f0039": "(hora de Miami)",
+    "f0038": "31 de octubre de 2026 · 10:00 a. m.",
+    "f0039": "(hora de Santiago)",
     "f0040": "#inversion",
     "f0041": "Matricúlate",
     "f0042": "#programa",
@@ -202,8 +202,8 @@
     "f0199": "Minutos",
     "f0200": "Segundos",
     "f0201": "Primera clase:",
-    "f0202": "26 de octubre de 2026 · 10:00 a. m.",
-    "f0203": "(hora de Miami)",
+    "f0202": "31 de octubre de 2026 · 10:00 a. m.",
+    "f0203": "(hora de Santiago)",
     "f0204": "Clases online por Zoom",
     "f0205": "26 de octubre 2026 hasta el 02 de febrero 2027",
     "f0206": "Días",
@@ -360,9 +360,9 @@
     "f0357": "Organizador Oficial Estados Unidos · 1ra Generación Estados Unidos · 7ma Generación R-evolución",
     "f0358": "assets/images/imagen-01.jpg",
     "f0359": "assets/images/imagen-02.png",
-    "f0360": "2026-10-26T10:00"
+    "f0360": "2026-10-31T10:00"
   },
   "countdown": {
-    "timeZone": "America/New_York"
+    "timeZone": "America/Santiago"
   }
 }
